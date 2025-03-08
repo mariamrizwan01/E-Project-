@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- custom js file link  -->
+   <script src="js/script.js" defer></script>
+
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+       <!--Add to Card-->
+       <div id="carticon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-item-count"></span>
+       </div>
+        <div class="cart">
+          <h2 class="cart-tittle">Your Cart</h2>
+          <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="images/1.png" class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-tittle">Miss Diro Perfume</h2>
+                    <span class="cart-price">Rs.52,377</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="fa-solid fa-trash cart-remove"></i>
+             </div> -->
+        </div>
+          <div class="total">
+            <div class="total-tittle">Total</div>
+            <div class="total-price">Rs 0</div>
+          </div>
+          <button class="btn-buy">Buy Now</button>
+          <i class="fa-solid fa-xmark" id="cart-close"></i>
+        </div>
+        <!--Side bar-->
+         <!-- Mobile Sidebar Menu Button -->
+         <button class="sidebar-menu-button">
+          <span class="material-symbols-rounded">menu</span>
+        </button>
+        <aside class="sidebar">
+          <!-- Sidebar Header -->
+          <header class="sidebar-header">
+            <a href="#" class="header-logo" style="text-decoration: none;">
+             <h3 style="color: white; font-size: 16px;">Parees Perfume</h3>
+            </a>
+            <button class="sidebar-toggler">
+              <span class="material-symbols-rounded" >chevron_left</span>
+            </button>
+          </header>
+          <nav class="sidebar-nav">
+            <!-- Primary Top Nav -->
+            <ul class="nav-list primary-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <span class="material-symbols-rounded">dashboard</span>
+                  <span class="nav-label" style="font-size: 16px;">Dashboard</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link dropdown-title" href="/DashBoard/dashboard.html" style="font-size: 16px;">Dashboard</a></li>
+                </ul>
+              </li>
+             <!-- Dropdown -->  
+    <li class="nav-item dropdown-container">  
+      <a href="#" class="nav-link dropdown-toggle">  
+        <span class="material-symbols-rounded">calendar_today</span>  
+        <span class="nav-label" style="font-size: 16px;">Brands</span>  
+        <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>  
+      </a>  
+      <!-- Dropdown Menu -->  
+      <ul class="dropdown-menu">  
+        <li class="nav-item"><a class="nav-link dropdown-title" style="font-size: 16px;">Brands</a></li>  
+        <!-- Dior Dropdown -->  
+        <li class="nav-item dropdown-container">  
+          <a href="#" class="nav-link dropdown-toggle" style="font-size: 16px;">  
+            Dior  
+            <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>  
+          </a>  
+          <ul class="dropdown-menu">  
+            <li class="nav-item"><a href="/Brands/dior_women/dior_women.html" class="nav-link dropdown-link" style="font-size: 16px;">Women</a></li>  
+            <li class="nav-item"><a href="/Brands/dior men perfume/dior_men.html" class="nav-link dropdown-link" style="font-size: 16px;">Men</a></li>  
+          </ul>  
+        </li>  
+         <!-- Chanel Dropdown -->  
+         <li class="nav-item dropdown-container">  
+          <a href="#" class="nav-link dropdown-toggle" style="font-size: 16px;"> Chanel  
+            <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>  
+          </a>  
+          <ul class="dropdown-menu">  
+            <li class="nav-item"><a href="/Brands/Chanel women/chanel_women.html" class="nav-link dropdown-link" style="font-size: 16px;">Women</a></li>  
+            <li class="nav-item"><a href="/Brands/Chanel Men Perfume/chanel_men.html" class="nav-link dropdown-link" style="font-size: 16px;">Men</a></li>  
+          </ul>  
+        </li>  
+          <!-- CK Dropdown -->  
+          <li class="nav-item dropdown-container">  
+            <a href="#" class="nav-link dropdown-toggle" style="font-size: 16px;"> CK  
+              <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>  
+            </a>  
+            <ul class="dropdown-menu">  
+              <li class="nav-item"><a href="/Brands/CK Women/ck_women.html" class="nav-link dropdown-link" style="font-size: 16px;">Women</a></li>  
+              <li class="nav-item"><a href="/Brands/CK Men/ck_men.html" class="nav-link dropdown-link" style="font-size: 16px;">Men</a></li>  
+            </ul>  
+          </li> 
+            <!-- Gucci Dropdown -->  
+            <li class="nav-item dropdown-container">  
+              <a href="#" class="nav-link dropdown-toggle" style="font-size: 16px;"> Gucci  
+                <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>  
+              </a>  
+              <ul class="dropdown-menu">  
+                <li class="nav-item"><a href="/Brands/Gucci_women Perfume/gucci_women.html" class="nav-link dropdown-link" style="font-size: 16px;">Women</a></li>  
+                <li class="nav-item"><a href="/Brands/Gucci men/gucci_men.html" class="nav-link dropdown-link" style="font-size: 16px;">Men</a></li>  
+              </ul>  
+            </li> 
+              <!-- Guerlain Dropdown -->  
+          <li class="nav-item dropdown-container">  
+            <a href="#" class="nav-link dropdown-toggle" style="font-size: 16px;"> Guerlain  
+              <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>  
+            </a>  
+            <ul class="dropdown-menu">  
+              <li class="nav-item"><a href="#" class="nav-link dropdown-link" style="font-size: 16px;">Women</a></li>  
+              <li class="nav-item"><a href="#" class="nav-link dropdown-link" style="font-size: 16px;">Men</a></li>  
+            </ul>  
+          </li> 
+            <!-- Burberry Dropdown -->  
+            <li class="nav-item dropdown-container">  
+              <a href="#" class="nav-link dropdown-toggle" style="font-size: 16px;" >Burberry  
+                <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>  
+              </a>  
+              <ul class="dropdown-menu">  
+                <li class="nav-item"><a href="/Brands/Burberry Women/buberry_women.html" class="nav-link dropdown-link" style="font-size: 16px;">Women</a></li>  
+                <li class="nav-item"><a href="/Brands/Burberry men/burberrymen.html" class="nav-link dropdown-link" style="font-size: 16px;">Men</a></li>  
+              </ul>  
+            </li> 
+      </ul>  
+    </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <span class="material-symbols-rounded">local_library</span>
+                  <span class="nav-label" style="font-size: 16px;">About Us</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link dropdown-title" href="/About Us/about_us.html" style="font-size: 16px;">About Us</a></li>
+                </ul>
+            </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <span class="material-symbols-rounded" >extension</span>
+                  <span class="nav-label" style="font-size: 16px;">Services</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item" ><a class="nav-link dropdown-title" style="font-size: 16px;">Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <span class="material-symbols-rounded">settings</span>
+                  <span class="nav-label" style="font-size: 16px;">Settings</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link dropdown-title" style="font-size: 16px;">Settings</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Secondary Bottom Nav -->
+            <ul class="nav-list secondary-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <span class="material-symbols-rounded">help</span>
+                  <span class="nav-label" style="font-size: 16px;">Support</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link dropdown-title" style="font-size: 16px;">Support</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="/Sign Up/index.html" class="nav-link">
+                  <span class="material-symbols-rounded">logout</span>
+                  <span class="nav-label" style="font-size: 16px;">Sign Out</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link dropdown-title" style="font-size: 16px;">Sign Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      <!--Carts-->
+<div class="container">
+   <h3 class="title">Burberry</h3>
+   <h4 class="tagline">Fragrances for Her</h4>
+   <img src="images/fragrance1.png" alt="" style="width: 88pc; margin-left: -120px;">
+   <section class="hero">
+    <div class="hero-content">
+        <p>Expressed through aromatic scents and unexpected blends of perfumes—men's fragrances are a celebration of freedom..</p>
+    </div>
+</section>
+   <div class="products-container">
+      <div class="product" data-name="p-1">
+         <img class="img" src="images/1.png" alt="">
+         <h3>My Burberry Eau de Parfum 90ml</h3>
+         <div class="price">Rs. 44,550</div>
+      </div>
+      <div class="product" data-name="p-2">
+        <img class="img" src="images/2.png" alt="">
+        <h3>My Burberry Blush Eau de Parfum 90ml</h3>
+        <div class="price">Rs. 65,550</div>
+     </div>
+     <div class="product" data-name="p-3">
+        <img class="img" src="images/3.png" alt="">
+        <h3>My Burberry Black Parfum 90ml</h3>
+        <div class="price">Rs. 35,550</div>
+     </div>
+     
+     <div class="product" data-name="p-4">
+      <img class="img" src="images/4.png" alt="">
+      <h3>Burberry Goddess Eau de Parfum Intense for Women 100ml</h3>
+      <div class="price">Rs. 35,550</div>
+   </div>
+   <div class="product" data-name="p-5">
+     <img class="img" src="images/5.png" alt="">
+     <h3>Burberry Goddess Body Lotion for Women 200ml</h3>
+     <div class="price">Rs. 65,550</div>
+  </div>
+  <div class="product" data-name="p-6">
+     <img class="img" src="images/6.png" alt="">
+     <h3>Her Eau de Parfum Petals Limited Edition 88ml</h3>
+     <div class="price">Rs. 35,550</div>
+  </div>
+  <div class="product" data-name="p-7">
+    <img class="img" src="images/7.png" alt="">
+    <h3>Mrs Burberry</h3>
+    <div class="price">Rs. 75,550</div>
+ </div>
+ <div class="product" data-name="p-8">
+  <img class="img" src="images/8.png" alt="">
+  <h3>Mrs Burberry gift Set</h3>
+  <div class="price">Rs. 75,550</div>
+</div>  
+<div class="product" data-name="p-9">
+  <img class="img" src="images/9.png" alt="">
+  <h3>Burberry London Fabric</h3>
+  <div class="price">Rs. 82,560</div>
+</div>
+<div class="product" data-name="p-10">
+  <img class="img" src="images/10.png" alt="">
+  <h3>Burberry Weekend Eau de Parfum 100ml</h3>
+  <div class="price">Rs. 92,560</div>
+</div>
+<div class="product" data-name="p-11">
+  <img class="img" src="images/14.png" alt="">
+  <h3>Burberry Touch Eau de Parfum 100ml</h3>
+  <div class="price">Rs. 35,540</div>
+</div>
+<div class="product" data-name="p-12">
+  <img class="img" src="images/15.png" alt="">
+  <h3>Burberry For Women Eau de Parfum 100ml</h3>
+  <div class="price">Rs. 80,000</div>
+</div>
+
+    </div>
+    <img src="images/Expactational_logo.png" alt="" style="margin-left:-150px ;
+   width: 90pc;">
+   <div class="expcetion">
+   <img src="images/12.png" alt="">
+   <img src="images/11.png" alt="">
+   <img src="images/13.png" alt="">
+
+   </div>
+    <h3 class="title" style="margin-top: 20px;">Burberry</h3>
+    <!--Footer Page-->
+    <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">watch</a></li>
+  	 				<li><a href="#">bag</a></li>
+  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#">dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+</div> 
+         <!--Product detail -->
+<div class="products-preview">
+    <div class="preview" data-target="p-1">
+       <i  class="fas fa-times"></i>
+       <img src="images/1.png" alt="">
+       <h3>My Burberry Eau de Parfum 90ml</h3>
+       <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Enjoy complimentary delivery or Collect In Store.</p>
+      <div class="price">Rs. 44,550</div>
+     <div class="buttons">
+        <a href="#" class="buy">Add to Cart</a>
+     </div>
+   </div>
+   <div class="preview" data-target="p-2">
+    <i  class="fas fa-times"></i>
+    <img src="images/2.png" alt="">
+    <h3>My Burberry Blush Eau de Parfum 90ml</h3>
+    <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+   <p>Enjoy complimentary delivery or Collect In Store.</p>
+   <div class="price">Rs. 65,550</div>
+   <div class="buttons">
+     <a href="#" class="buy">Add to Cart</a>
+   </div>
+  </div>
+  <div class="preview" data-target="p-3">
+    <i  class="fas fa-times"></i>
+    <img src="images/3.png" alt="">
+    <h3>My Burberry Black Parfum 90ml</h3>
+    <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <span>( 250 )</span>
+   </div>
+  <p>Enjoy complimentary delivery or Collect In Store.</p>
+  <div class="price">Rs. 35,550</div>
+  <div class="buttons">
+     <a href="#" class="buy">Add to Cart</a>
+  </div>
+ </div>
+ <div class="preview" data-target="p-4">
+  <i  class="fas fa-times"></i>
+  <img src="images/4.png" alt="">
+  <h3>Burberry Goddess Eau de Parfum Intense for Women 100ml</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <span>( 250 )</span>
+ </div>
+<p>Enjoy complimentary delivery or Collect In Store.</p>
+<div class="price">Rs. 35,550</div>
+<div class="buttons">
+   <a href="#" class="buy">Add to Cart</a>
+</div>
+</div>
+<div class="preview" data-target="p-5">
+  <i  class="fas fa-times"></i>
+  <img src="images/5.png" alt="">
+  <h3>Burberry Goddess Body Lotion for Women 200ml</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <span>( 250 )</span>
+ </div>
+<p>Enjoy complimentary delivery or Collect In Store.</p>
+<div class="price">Rs. 65,550</div>
+<div class="buttons">
+   <a href="#" class="buy">Add to Cart</a>
+</div>
+</div>
+<div class="preview" data-target="p-6">
+  <i  class="fas fa-times"></i>
+  <img src="images/6.png" alt="">
+  <h3>Her Eau de Parfum Petals Limited Edition 88ml</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <span>( 250 )</span>
+ </div>
+<p>Enjoy complimentary delivery or Collect In Store.</p>
+<div class="price">Rs. 35,550</div>
+<div class="buttons">
+   <a href="#" class="buy">Add to Cart</a>
+</div>
+</div>
+<div class="preview" data-target="p-7">
+  <i  class="fas fa-times"></i>
+  <img src="images/7.png" alt="">
+  <h3>Mrs Burberry</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <span>( 250 )</span>
+ </div>
+<p>Enjoy complimentary delivery or Collect In Store.</p>
+<div class="price">Rs. 75,550</div>
+<div class="buttons">
+   <a href="#" class="buy">Add to Cart</a>
+</div>
+</div>
+<div class="preview" data-target="p-8">
+  <i  class="fas fa-times"></i>
+  <img src="images/8.png" alt="">
+  <h3>Mrs Burberry gift Set</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <span>( 250 )</span>
+ </div>
+<p>90ml, Size: 90ml, Long Lasting, Oriental Spicy, Eau de Toilette, Made To Measure, For Men, Specifications</p>
+<div class="price">Rs. 75,550</div>
+<div class="buttons">
+   <a href="#" class="buy">Add to Cart</a>
+</div>
+</div>
+<div class="preview" data-target="p-9">
+  <i  class="fas fa-times"></i>
+  <img src="images/9.png" alt="">
+  <h3>Burberry London Fabric</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <span>( 250 )</span>
+ </div>
+<p>90ml, Size: 90ml, Long Lasting, Oriental Spicy, Eau de Toilette, Made To Measure, For Men, Specifications</p>
+<div class="price">Rs. 82,560</div>
+<div class="buttons">
+   <a href="#" class="buy">Add to Cart</a>
+</div>
+</div>
+<div class="preview" data-target="p-10">
+  <i  class="fas fa-times"></i>
+  <img src="images/10.png" alt="">
+  <h3>Burberry Weekend Eau de Parfum 100ml</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <span>( 250 )</span>
+ </div>
+<p>90ml, Size: 90ml, Long Lasting, Oriental Spicy, Eau de Toilette, Made To Measure, For Men, Specifications</p>
+<div class="price">Rs. 92,560</div>
+<div class="buttons">
+   <a href="#" class="buy">Add to Cart</a>
+</div>
+</div>
+<div class="preview" data-target="p-11">
+  <i  class="fas fa-times"></i>
+  <img src="images/14.png" alt="">
+  <h3>Burberry Touch Eau de Parfum 100ml</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <span>( 250 )</span>
+ </div>
+<p>Enjoy complimentary delivery or Collect In Store.</p>
+<div class="price">Rs. 35,540</div>
+<div class="buttons">
+   <a href="#" class="buy">Add to Cart</a>
+</div>
+</div>
+<div class="preview" data-target="p-12">
+  <i  class="fas fa-times"></i>
+  <img src="images/15.png" alt="">
+  <h3>Burberry For Women Eau de Parfum 100ml</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <span>( 250 )</span>
+ </div>
+<p>90ml, Size: 90ml, Long Lasting, Oriental Spicy, Eau de Toilette, Made To Measure, For Men, Specifications</p>
+<div class="price">Rs. 80,000</div>
+<div class="buttons">
+   <a href="#" class="buy">Add to Cart</a>
+</div>
+</div>
+</div>
+</body>
+</html>
