@@ -16,7 +16,7 @@
         }
         .main{
         display: flex;
-        margin-left: 30px;
+        margin-left: 15px;
        }
        div{
         margin-left: 40px;
@@ -24,11 +24,12 @@
     }
     img{
     width: 380px;
-    height: 650px;}
+    height: 650px;
+  }
     #i2{ 
         filter: brightness(25%);
-        margin-left: -20px;
-        width: 90pc;
+        width: 89pc;
+        margin-left: -47px;
     }
     .card-title{
         margin-top: 50px;
@@ -83,12 +84,13 @@ height: 100px;
 }
 .main2{
 display: flex;
-margin-left: -20px;
+margin-left: -10px;
 background-color: rgb(255, 255, 255);
 
 }
 .img3{ 
   width: 380px;
+  margin-left: -10px;
   height: 450px;
 }
   .child2{
@@ -103,7 +105,64 @@ background-color: rgb(255, 255, 255);
         }
         .navbar{
             background-color: black;
-            width: 92pc;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+        .footer {
+            background-color: #000;
+            color: white;
+            margin-top: 20px;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            width: 22%;
+            min-width: 200px;
+        }
+        .footer-column h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .footer-column a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+        .footer input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            border: none;
+        }
+        .country {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .icons i{
+          margin: 6px;
+        }
+        .footer-bottom {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+        .footer-bottom p{
+          color: #fff;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 45px;
+          margin-left: -50px;
         }
     </style>
 </head> 
@@ -135,7 +194,7 @@ background-color: rgb(255, 255, 255);
             </div>
           </div>
     </div>
-    <div class="card bg-dark text-white">
+    <div class="card text-white">
         <img id="i2" src="https://media.istockphoto.com/id/143175390/photo/noir-style-new-fragrance.jpg?s=612x612&w=0&k=20&c=taJcv-SHbbcjty9-lXL0ndf6Lw8Lv_Wyj1p_zhXo37Q=" class="card-img" alt="...">
         <div class="card-img-overlay">
           <h1 class="card-title">INTRODUCTION</h1>
@@ -186,5 +245,47 @@ background-color: rgb(255, 255, 255);
           
         </div>
       </div>
+         <!--Footer Page-->
+         <footer class="footer">
+          <div class="footer-column">
+              <h3>MAY WE HELP YOU?</h3>
+              <a href="/About Us/about_us.html">Contact Us</a>
+              <a href="/Our Services/service.html">Our Services</a>
+              <a href="#">FAQs</a>
+          </div>
+          <div class="footer-column">
+              <h3>Available Brands</h3>
+              <a href="/Brands/dior men perfume/dior_men.html">Gucci Men</a>
+              <a href="/Brands/Gucci_women Perfume/gucci_women.html">Gucci women</a>
+              <a href="/Brands/Burberry men/burberrymen.html">Burberry Men </a>
+              <a href="/Brands/Burberry Women/buberry_women.html">Burberry Women </a>
+              <a href="/Brands/dior men perfume/dior_men.html">Dior Men </a>
+              <a href="/Brands/dior_women/dior_women.html">Dior Women </a>
+              <a href="/Brands/Chanel Men Perfume/chanel_men.html">Chanel Men </a>
+              <a href="/Brands/Chanel women/chanel_women.html">Chanel Women </a>
+              <a href="/Brands/CK Men/ck_men.html">CK Men </a>
+              <a href="/Brands/CK Women/ck_women.html">CK Women </a>
+          </div>
+          <div class="footer-column">
+              <h3>STORE LOCATOR</h3>
+              <input type="text" placeholder="Country/Region, City">
+          </div>
+          <div class="footer-column">
+              <h3>Sign Up for Paarees Perfume updates</h3>
+              <p>By entering your email address below, you consent to receiving our newsletter...</p>
+              <input type="email" placeholder="Email">
+              <p class="country">COUNTRY/REGION</p>
+              <p>Karachi, Pakistan </p>
+          </div>
+          <div class="icons">
+            <a href="https://github.com/mariamrizwan01"><i class="fa-brands fa-github" style="color: #ffffff; font-size: 25px;"></i></a>
+        <a href="https://www.instagram.com/_mariam_rizwan"><i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 25px; "></i></a>
+        <a href="https://www.linkedin.com/in/mariam-rizwan-a6272727b"><i class="fa-brands fa-linkedin" style="color: #ffffff; font-size: 25px; "></i></a>
+        <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff; font-size: 25px; "></i></a>
+          </div>
+          <div class="footer-bottom">
+            <p>PAAREES PERFUMES</p>
+        </div>
+      </footer>
       </body>
       </html>
