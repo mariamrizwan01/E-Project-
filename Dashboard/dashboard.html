@@ -8,13 +8,7 @@
     ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
-    .logo{
-    color: aliceblue;
-    margin-left: 500px;
-    font-size: 45px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        .main{
+ .main{
         display: flex;
         margin-left: 15px;
        }
@@ -82,35 +76,68 @@ height: 100px;
     margin-top: 80px;
 
 }
-.main2{
-display: flex;
-margin-left: -10px;
-background-color: rgb(255, 255, 255);
-
+.navbar-brand{
+  color: #ffffff;
+  margin-left: 480px;
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.img3{ 
-  width: 380px;
-  margin-left: -10px;
-  height: 450px;
+.navbar-brand:hover{
+  color: rgb(235, 235, 253);
 }
-  .child2{
-    transition: transform 0.3s,
-     box-shadow 0.3s;
-     margin-left: 80px;
-}
-    .child2:hover {
+    .gallery img:hover {
             transform: scale(1.05);
             box-shadow: 0px 10px 20px rgba(167, 145, 22, 0.877);
             border: solid rgb(46, 45, 45) 2px;
         }
-        .navbar{
-            background-color: black;
+        .gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            max-width: 90%;
+            justify-content: center;
         }
+        .gallery img {
+            width: 450px;
+            max-width: 300px;
+            height: 500px;
+            margin: 13px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+      
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #fff;
+        }
+        .brand-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 90%;
+        }
+        .brand-container img {
+            width: 170px; /* Adjust the size as needed */
+            height: auto;
+            object-fit: contain;
+        }
+        @media (max-width: 768px) {
+            .brand-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .brand-container img {
+                width: 80px; /* Reduce size for smaller screens */
+            }
         }
         .footer {
             background-color: #000;
@@ -144,6 +171,23 @@ background-color: rgb(255, 255, 255);
             margin-top: 10px;
             border: none;
         }
+        @media (max-width: 768px) {
+          .card .card-text {
+                font-size: 7px;
+                padding: 10px 20px;
+            }
+        }
+        @media (max-width: 768px) {
+          .card .card-title {
+                font-size: 10px;
+                padding: 10px 20px;
+            }
+        }
+        @media (max-width: 768px) {
+          .card .card-img {
+            width: 70pc;
+            }
+        }
         .country {
             font-weight: bold;
             margin-top: 15px;
@@ -164,21 +208,32 @@ background-color: rgb(255, 255, 255);
           font-size: 45px;
           margin-left: -50px;
         }
+        @media (max-width: 768px) {
+          .container .navbar-brand {
+                font-size: 30px;
+                margin-left: 40px;
+            }
+        }
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+          .main  .card-img, .video video {
+                width: 280px; /* Full width on small screens */
+                height: auto;
+            }
+        }
     </style>
 </head> 
 <body>
-    <nav class="navbar">
-        <div class="container-fluid">
-          <h3 class="logo">PAAREES PERFUMES</h3>
-         </div>
-    </nav>
+  <nav class="navbar bg-dark">
+    <div class="container">
+      <h2 class="navbar-brand">PAAREES PERFUMES</h2>
+    </div>
+  </nav>
  <div class="main">
-    <div class="card bg-dark text-white">
+    <div class="card  text-white">
         <img src="https://i.pinimg.com/736x/d0/9d/b1/d09db174bf0ad9ab3bcd58600cb042db.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <button id="b">for her</button>
-          
-        </div>
       </div>
         <div class="video">
             <video  width="380" height="650"  autoplay loop muted>
@@ -186,12 +241,8 @@ background-color: rgb(255, 255, 255);
               </video>
         </div>
         
-        <div class="card bg-dark text-white">
+        <div class="card  text-white">
             <img src="https://i.pinimg.com/736x/1e/86/05/1e8605809108205ad4305240d87eec59.jpg" class="card-img" alt="...">
-            <div class="card-img-overlay">
-              <button id="b">for him</button>
-              
-            </div>
           </div>
     </div>
     <div class="card text-white">
@@ -201,49 +252,22 @@ background-color: rgb(255, 255, 255);
           <p class="card-text">Welcome to "PAAREES PERFUMES", where luxury meets elegance. Explore an extensive collection of world-renowned perfume brands,<br> carefully curated to offer a diverse range of scents for every personality and occasion. From timeless classics to the latest trends,<br> our selection includes exquisite perfumes from across the globe. Whether you're  looking for a signature scent or a gift for someone special, <br>we provide the finest fragrances to indulge your senses, with global shipping for your convenience. Indulge in the art of perfumery <br>with our carefully selected range of premium fragrances. Each scent tells a unique story, capturing the essence <br>of elegance, sophistication, and allure. Our platform brings together the finest global brands, allowing you to discover exclusive fragrances <br>that are as unique as you are. Whether you prefer floral, woody, or oriental notes, our diverse collection offers something for every taste.<br> With fast, worldwide shipping, your perfect fragrance is just a click away, ready to elevate your everyday experience.Browse through our <br> vast selection of iconic perfumes, meticulously sourced from the most prestigious brands worldwide. <br>We pride ourselves on offering an unparalleled shopping experience, with detailed descriptions and customer reviews to <br>guide your selection.Whether you're seeking a bold, statement-making fragrance or something subtle and refined, our diverse range<br> ensures that you’ll find the perfect scent to suit your style. Plus, with secure payment options and prompt worldwide delivery,<br> discovering your next signature scent has never been easier. Treat yourself or a loved one to the gift of luxury—immerse yourself in the<br> world of fine perfumes today!</p>
         </div>
       </div>
-      <div class="main2">
-        <div class="child">
-          <img id="img2" src="data:image/png;base64,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" alt="">
-        </div>
-        <div class="child">
-          <img id="img2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPkAAADKCAMAAABQfxahAAAAgVBMVEX///8AAAD5+fna2tpnZ2dVVVWkpKTNzc3i4uIODg7u7u7o6Ojz8/MmJib29vZERERhYWFNTU0aGhoyMjJ0dHSrq6vS0tLDw8OEhIRSUlIfHx+7u7uQkJCenp4kJCQTExM4ODhISEh5eXmysrIvLy+WlpaAgICfn59ubm6RkZF3d3fN2O+7AAAGfElEQVR4nO2aW2OqOBRGuWhFVBAVrZdaPVrbnv//A0cgO0CyQ2AK03n41pOGS1jktpPgOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABS8SfrYXxaLxTr5+7Kb//bj1Nm5BqaLePSabkPmmnBxPp8P7wvBeXo4HKZH9azZZ/K8zfhzt/W3u5fl83f8HagnvXI5T9/X482Jz7s/omA2C4IT5foVzgSBv/sYZ4/7OlGv8bLj4Qddc9lm/5USnWSq07R8+PC2eKYkygua51mN6FajIM/bP76es7/xQ8u7d64i60/lwdJ1lvo9Yy7xFuIa5un8rLjdk1dPzd/vZaefHpB5pU74X3nK+1vUWaYT9Nbf1ANemqc/GPexuMbXrimqkK44ydM3WoOPqJ7X6vc2f+vuSmtHvWI0fxbIhasNjtl8FufJWyYbPz9yUK/wWHNnnhTJr51UOtJg7kSF4l4tdoP5dmpqA9lBl6sOBnPZoIZUbzJ3nKIQV0rPzJsXxep+GDJ6KQ7Xa7DJXDQPruH0Bpm/sEdD8e7rFZg1F53V1ZjTmLmV0dxZFgcWHVQ60mxO735aq/CcuVd0Coa6niHqxKp6K7P5cfBCt5g7f4vDcXWc4sz/FEnLhqzEKftKktl8Lo786eDSDZv5TBw/VdIYc2qXTQEIDd5pmWQ2d96LI5f2Kh2xmcsws6LJmMdtnlOMVatyWG8wF61n5WlHesJqLpqnOy6TdHNqlaaOveAmzirHkQbzxHikJ6zmzlXz1M1jvRYwUMs5yLi0wTz+ffNUnLGRKZq5CFOsY9BenCcHdXs7P3eR6YTdnDqmlXw6zZz6gpElM5oZyhHAbB6KI+b44KfYzZ2VOEUOrZr5xX6THLkmQH2cfTznY8s+aGFOp8ggWjWXc01b2EG9pRz8zOaUBzdN7ocW5lRHY/WpyJzKx9VWXhQoPJFjgNGcaseAU5YW5jQYuZSgmsuFHevYS2saX+K/yXwuWlg82GjeypziM5ceTzXfqK/GCI1+FMEazCMxmC+GXLtsYS5bJ02zVHMarOwTK7pyLcqSN9+ei9TNgCXeylzrwFRz6tovrXM7iMLkzH0xs0kGXoTsw/wu/semO0i+xJkUG9TNvSjcvhUN4v7aHA72QJfabjJfdy7zlVLm7vrJZZ31a+v96HS0DRJ90MWcqp9qfhX/79bclnSmaj6ZBf4t6ymncTrsPoOkS99OJaGa0z2m1tzoHVG78Oq3jorxcfNfFHkbcxmoUIJqLneKrH0xtQsK3BVzOfc5mW7QIy3MaTdpTQmqOc3mXGs9pSkAhWaaOTWt++AdXBvzjfK4mrk24JugCbp7Ewm6uYxbB1xvLmhhflefRTWP7oqQia0qypjTQqU77N5SG3OaKZcrKdoslWrFw5IZzQDkIMCZh9Qkfj2Socctp02aOdXQiyUzKk65XMeZ025MZSlkEOzmNAaXM2V9He5dO4eDdiNKT9bcE2F7Zf1rCKzm1CtVlvx18zeR0tzQKQwuF61Y83KssPWYP8Jq/qFXPd18fihSmrZYyuGxvI4398Td3KSzTgds5pGoyNWeltlpoGJqrO5iXeKrTOHNnU9KHrKTs5mL+Ky2KsTtq4m1hKbgi/rBSu0xmFMVajH7+/dYzH2uFnPm1B00rKLs9dpjMJfd+5CDerN5VPTG4/rHOuz++Y6pHI7tBJO5Q4X+a/vnY7VhVlLVvaS0uWlGRYBS34wwmsuV+eadup/QaD7iDxm+kyn6pbNhwlbEeaP6UaN5uao52Iy1wbz41OmqZ236NqqYzu5Z9e/8mBrems3lMu1gI5vZPK+9Zy42MX4P5+fdwpL5hK8YyrWbNZiHFPANNVen2DStJ0fHbBHhcmPLz7xn7OWGF9Vjnq88LvU4fG42d8KEf7Se8Kd6TxIFx+zrmPhkWB2QvQ/Xj88eeTlVJaNb1rmNua6Pol5249A76c/WB9s4SRIqvaxEBNf182UkpyMXjc2X4/F4X15zf/5VP+V1wrcsVtuIb7u9ySkboR7qW0yT57WV7C/ZndWKTV8EX4/hvL9dh/mEZ+s3TA65C5hXFKSjrJXe46zJLJYfzMxjxt2Kae3p8j5knR+CcOY/Xfwg/GlhebPA94PhdpMBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgP8J/wC1VEKQS3mS5gAAAABJRU5ErkJggg==" alt="">
-        </div>
-        <div class="child">
-          <img src="data:image/png;base64,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" alt="" id="img2">
-        </div>
-        <div class="child">
-          <img src="data:image/png;base64,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" alt="" id="img2">
-        </div>
-        <div class="child">
-          <img src="data:image/png;base64,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" alt="" id="img2">
-        </div>
-        <div class="child">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcnXuoQ4FtYinN7-NfVd1ePr6iZrUdiLecyQ&s" alt="" id="img2">
-        </div>
-      </div>
-     
-      <div class="main">
-        <div class="child2">
-            <a href="/Brands/Gucci_women Perfume/gucci_women.html"><img src="https://i.pinimg.com/736x/93/62/4e/93624e1b882780d3e5878ded52056cc7.jpg" alt="" title="GUCCI PERFUMES , AVAILABLE IN MEN AND WOMEN BOTH" class="img3"></a>
-        </div>
-        <div class="child2">
-            <a href="/Brands/dior_women/dior_women.html"><img src="https://i.pinimg.com/736x/af/35/3e/af353e053bf7abbcbd8a491cb5ef864a.jpg" alt=""  title="DIOR PERFUMES , AVAILABLE IN MEN AND WOMEN BOTH" class="img3"></a>
-        </div>
-        <div class="child2">
-            <a href="/Brands/Chanel women/chanel_women.html"><img src="https://i.pinimg.com/736x/e9/4f/0f/e94f0fee6cb956fa8a9af9fc2d557f41.jpg" alt=""  title="CHANNEL PERFUMES , AVAILABLE IN MEN AND WOMEN BOTH" class="img3"></a>
-        </div>
-      </div>
-      <div class="main">
-        <div class="child2">
-            <a href="/Brands/CK Men/ck_men.html">   <img src="https://i.pinimg.com/736x/09/e5/02/09e502707c5e20161c43aaecaea645a7.jpg" alt="#"  title="CK PERFUMES , AVAILABLE IN MEN AND WOMEN BOTH" class="img3"></a>
-        </div>
-        <div class="child2">
-        <a href="/Brands/Burberry men/burberrymen.html">  <img src="https://i.pinimg.com/736x/08/35/bd/0835bd0554952734c8cb95e79ff4bb3a.jpg" alt=""  title="BURBERRY PERFUMES , AVAILABLE IN MEN AND WOMEN BOTH" class="img3"></a>
-        </div>
-        <div class="child2">
-       <a href="">  <img src="https://i.pinimg.com/736x/20/28/b6/2028b66d94316dc286dbb17504ddee5b.jpg" alt=""  title="GUERLAIN , AVAILABLE IN MEN AND WOMEN BOTH" class="img3"></a> 
-          
-        </div>
+      <div class="brand-container">
+        <img src="gucci.png" alt="Gucci">
+        <img src="dior.jpg" alt="Dior">
+        <img src="chanel.png" alt="Chanel">
+        <img src="ck.png" alt="Calvin Klein">
+        <img src="Burberry.png" alt="Burberry">
+        <img src="guerlain.png" alt="Guerlain">
+    </div>
+      <div class="gallery">
+            <a href="/Brands/Gucci_women Perfume/gucci_women.html"><img src="https://i.pinimg.com/736x/93/62/4e/93624e1b882780d3e5878ded52056cc7.jpg" alt="" title="GUCCI PERFUMES , AVAILABLE IN MEN AND WOMEN BOTH" ></a>
+            <a href="/Brands/dior_women/dior_women.html"><img src="https://i.pinimg.com/736x/af/35/3e/af353e053bf7abbcbd8a491cb5ef864a.jpg" alt=""  title="DIOR PERFUMES , AVAILABLE IN MEN AND WOMEN BOTH" ></a>
+  
+            <a href="/Brands/Chanel women/chanel_women.html"><img src="https://i.pinimg.com/736x/e9/4f/0f/e94f0fee6cb956fa8a9af9fc2d557f41.jpg" alt=""  title="CHANNEL PERFUMES , AVAILABLE IN MEN AND WOMEN BOTH" ></a>
+            <a href="/Brands/CK Men/ck_men.html">   <img src="https://i.pinimg.com/736x/09/e5/02/09e502707c5e20161c43aaecaea645a7.jpg" alt="#"  title="CK PERFUMES , AVAILABLE IN MEN AND WOMEN BOTH"></a>
+        <a href="/Brands/Burberry men/burberrymen.html">  <img src="https://i.pinimg.com/736x/08/35/bd/0835bd0554952734c8cb95e79ff4bb3a.jpg" alt=""  title="BURBERRY PERFUMES , AVAILABLE IN MEN AND WOMEN BOTH" ></a>
+       <a href="">  <img src="https://i.pinimg.com/736x/20/28/b6/2028b66d94316dc286dbb17504ddee5b.jpg" alt=""  title="GUERLAIN , AVAILABLE IN MEN AND WOMEN BOTH"></a> 
       </div>
          <!--Footer Page-->
          <footer class="footer">
