@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f8f8f8;
+        }
+        .services-container {
+            text-align: center;
+        }
+        .services-container h2 {
+            font-size: 32px;
+            color: #333;
+        }
+        .services-container p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+            
+        }
+        .service-box img {
+            width: 50px;
+        }
+        .service-box h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+        .service-box p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+         h1{
+           
+            font-family: 'Times New Roman', Times, serif;
+           }
+
+        
+    </style>
+</head>
+<body>
+    <div class="services-container">
+        <h1>Our Services <br> and Other Informations.</h1> <br>
+        <p>We Provide The Best In Class Services For Our Customers</p>
+        <div class="services">
+            <div class="service-box">
+                <i id="icons" class="fa-solid fa-truck-fast"></i>
+                <h3>Shipping</h3>
+                <p>We offer fast, secure, and reliable shipping services Worldwide.</p>
+                
+            </div>
+            <div class="service-box">
+                <i id="icons" class="fa-solid fa-phone"></i>
+                <h3>Customer Services</h3>
+                <p>We provide 24/7 customer support to ensure a seamless experience for you.</p>
+               
+            </div>
+            <div class="service-box">
+                <i id="icons" class="fa-solid fa-lock"></i>
+                <h3>Secure Payment</h3>
+                <p>We ensure secure and encrypted payment methods for a safe transaction.</p>
+                
+            </div>
+            <div class="service-box">
+                <i id="icons" class="fa-solid fa-envelope"></i>
+                <h3>Contact Us</h3>
+                <p>Have questions? Contact us anytime for support and inquiries.</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        .contact-container {
+            display: flex;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 700px;
+             
+        }
+        .contact-info {
+            background: #022B44;
+            color: white;
+            padding: 30px;
+            width: 40%;
+        }
+        .contact-info h2 {
+            margin-bottom: 20px;
+        }
+        .contact-info p, .contact-info a {
+            margin-bottom: 10px;
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+        .contact-info .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .contact-form {
+            padding: 30px;
+            width: 60%;
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #022B44;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #022B44;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+        }
+        .contact-form button:hover {
+            background: #164679;
+        }
+        .success-message {
+            color: rgb(111, 235, 111);
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <p>Dolmen Mall,Tariq Road</p>
+            <p>Karachi,Pakistan</p>
+            <p>Paareesperfume@gmail.com</p>
+            <p>0331-3557886</p>
+            <div class="social-icons">
+                <a href= "" class="fa-brands fa-facebook"></a>
+              <a href= "" class="fa-brands fa-twitter"></a>
+              <a href= "" class="fa-brands fa-instagram"></a>
+              <a href= "" class="fa-brands fa-linkedin"></a>
+              <a href= "" class="fa-brands fa-github"></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="email" id="email" placeholder="Email Address">
+            <input type="text" id="mobile" placeholder="Mobile Number">
+            <textarea id="message" rows="4" placeholder="Write your message here..."></textarea>
+            <button onclick="sendMessage()">Send</button>
+            <p class="success-message" id="successMessage">Thank you! Your message has been sent.</p>
+        </div>
+    </div>
+    
+    <script>
+        function sendMessage() {
+            let firstName = document.getElementById("firstName").value;
+            let lastName = document.getElementById("lastName").value;
+            let email = document.getElementById("email").value;
+            let mobile = document.getElementById("mobile").value;
+            let message = document.getElementById("message").value;
+            
+            if (firstName && lastName && email && mobile && message) {
+                document.getElementById("successMessage").style.display = "block";
+                setTimeout(() => {
+                    document.getElementById("successMessage").style.display = "none";
+                }, 3000);
+            } else {
+                alert("Please fill in all fields.");
+            }
+        }
+    </script>
+</body>
+</html>
