@@ -14,15 +14,18 @@
         }
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
+            justify-content: center;
+            min-height: 100vh;
             background: #f8f8f8;
+            padding: 20px;
         }
         .services-container {
             text-align: center;
         }
-        .services-container h2 {
+        .services-container h1 {
+            font-family: 'Times New Roman', Times, serif;
             font-size: 32px;
             color: #333;
         }
@@ -32,6 +35,7 @@
         }
         .services {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
         }
@@ -46,10 +50,10 @@
         }
         .service-box:hover {
             transform: translateY(-5px);
-            
         }
-        .service-box img {
-            width: 50px;
+        .service-box i {
+            font-size: 50px;
+            color: #000408;
         }
         .service-box h3 {
             margin: 15px 0;
@@ -58,74 +62,21 @@
         .service-box p {
             color: #666;
             font-size: 14px;
-            margin-bottom: 15px;
         }
-         h1{
-           
-            font-family: 'Times New Roman', Times, serif;
-           }
 
-        
-    </style>
-</head>
-<body>
-    <div class="services-container">
-        <h1>Our Services <br> and Other Informations.</h1> <br>
-        <p>We Provide The Best In Class Services For Our Customers</p>
-        <div class="services">
-            <div class="service-box">
-                <i id="icons" class="fa-solid fa-truck-fast"></i>
-                <h3>Shipping</h3>
-                <p>We offer fast, secure, and reliable shipping services Worldwide.</p>
-                
-            </div>
-            <div class="service-box">
-                <i id="icons" class="fa-solid fa-phone"></i>
-                <h3>Customer Services</h3>
-                <p>We provide 24/7 customer support to ensure a seamless experience for you.</p>
-               
-            </div>
-            <div class="service-box">
-                <i id="icons" class="fa-solid fa-lock"></i>
-                <h3>Secure Payment</h3>
-                <p>We ensure secure and encrypted payment methods for a safe transaction.</p>
-                
-            </div>
-            <div class="service-box">
-                <i id="icons" class="fa-solid fa-envelope"></i>
-                <h3>Contact Us</h3>
-                <p>Have questions? Contact us anytime for support and inquiries.</p>
-                
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-<style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            
-        }
         .contact-container {
             display: flex;
+            flex-direction: row;
             background: #fff;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 700px;
-             
+            width: 100%;
+            max-width: 700px;
+            margin-top: 40px;
         }
         .contact-info {
-            background: #022B44;
+            background: #000408;
             color: white;
             padding: 30px;
             width: 40%;
@@ -139,9 +90,11 @@
             color: white;
             text-decoration: none;
         }
-        .contact-info .social-icons a {
+        .social-icons a {
             display: inline-block;
             margin-right: 10px;
+            font-size: 18px;
+            color: white;
         }
         .contact-form {
             padding: 30px;
@@ -149,7 +102,7 @@
         }
         .contact-form h2 {
             margin-bottom: 20px;
-            color: #022B44;
+            color: #000408;
         }
         .contact-form input, .contact-form textarea {
             width: 100%;
@@ -159,7 +112,7 @@
             border-radius: 5px;
         }
         .contact-form button {
-            background: #022B44;
+            background: #000408;
             color: white;
             padding: 10px;
             border: none;
@@ -169,31 +122,79 @@
             transition: 0.3s;
         }
         .contact-form button:hover {
-            background: #164679;
+            background: #000408;
         }
         .success-message {
-            color: rgb(111, 235, 111);
+            color: rgb(13, 94, 13);
             margin-top: 10px;
             display: none;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+            .contact-info, .contact-form {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-container h1 {
+                font-size: 24px;
+            }
+            .service-box {
+                width: 100%;
+            }
+        }
+
     </style>
 </head>
 <body>
+    <div class="services-container">
+        <h1>Our Services <br> and Other Informations.</h1>
+        <p>We Provide The Best In Class Services For Our Customers</p>
+        <div class="services">
+            <div class="service-box">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Shipping</h3>
+                <p>We offer fast, secure, and reliable shipping services Worldwide.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Customer Services</h3>
+                <p>We provide 24/7 customer support to ensure a seamless experience for you.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-lock"></i>
+                <h3>Secure Payment</h3>
+                <p>We ensure secure and encrypted payment methods for a safe transaction.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Contact Us</h3>
+                <p>Have questions? Contact us anytime for support and inquiries.</p>
+            </div>
+        </div>
+    </div> 
+
     <div class="contact-container">
         <div class="contact-info">
             <h2>Contact Info</h2>
-            <p>Dolmen Mall,Tariq Road</p>
-            <p>Karachi,Pakistan</p>
+            <p>Dolmen Mall, Tariq Road</p>
+            <p>Karachi, Pakistan</p>
             <p>Paareesperfume@gmail.com</p>
             <p>0331-3557886</p>
             <div class="social-icons">
-                <a href= "" class="fa-brands fa-facebook"></a>
-              <a href= "" class="fa-brands fa-twitter"></a>
-              <a href= "" class="fa-brands fa-instagram"></a>
-              <a href= "" class="fa-brands fa-linkedin"></a>
-              <a href= "" class="fa-brands fa-github"></a>
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="#" class="fa-brands fa-linkedin"></a>
+                <a href="#" class="fa-brands fa-github"></a>
             </div>
         </div>
+
         <div class="contact-form">
             <h2>Send a Message</h2>
             <input type="text" id="firstName" placeholder="First Name">
@@ -205,7 +206,7 @@
             <p class="success-message" id="successMessage">Thank you! Your message has been sent.</p>
         </div>
     </div>
-    
+
     <script>
         function sendMessage() {
             let firstName = document.getElementById("firstName").value;
