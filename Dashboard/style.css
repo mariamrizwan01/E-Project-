@@ -1,0 +1,260 @@
+.main{
+    display: flex;
+    margin-left: 15px;
+   }
+   div{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+img{
+width: 380px;
+height: 650px;
+}
+#i2{ 
+    filter: brightness(25%);
+    width: 89pc;
+    margin-left: -47px;
+}
+.card-title{
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.card-img-overlay{
+    text-align: center; 
+   }
+
+
+body {
+
+background-color: #ffffff;
+
+}
+
+
+#b{
+margin-top: 550px;
+width: 150px;
+height: 40px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-radius: 10px;
+background-color:rgb(185, 163, 108) ;
+border-color: rgb(185, 163, 108) ;
+color: #ffffff;
+box-shadow: rgb(247, 236, 236) 3px 6px 8px ;
+font-weight: 900;
+}
+#b:hover{
+background-color:rgb(179, 153, 90);
+}
+h1{
+font-family:  Bradley Hand ITC;}
+p
+{
+font-family:MV Boli;
+}
+
+#img2{
+width: 130px;
+height: 100px;
+}
+
+.child{
+margin-left: 100px;
+}
+.card-text{
+margin-top: 80px;
+
+}
+.gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 10px 20px rgba(167, 145, 22, 0.877);
+        border: solid rgb(46, 45, 45) 2px;
+    }
+    .gallery {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        max-width: 90%;
+        justify-content: center;
+    }
+    .gallery img {
+        width: 450px;
+        max-width: 300px;
+        height: 500px;
+        margin: 13px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    @media (max-width: 768px) {
+        .gallery {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+  
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+    }
+    .brand-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 90%;
+    }
+    .brand-container img {
+        width: 170px; /* Adjust the size as needed */
+        height: auto;
+        object-fit: contain;
+    }
+    @media (max-width: 768px) {
+        .brand-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .brand-container img {
+            width: 80px; /* Reduce size for smaller screens */
+        }
+    }
+    .footer {
+        background-color: #000;
+        color: white;
+        margin-top: 20px;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .footer-column {
+        width: 22%;
+        min-width: 200px;
+    }
+    .footer-column h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .footer-column a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 8px;
+    }
+    .footer-column a:hover {
+        text-decoration: underline;
+    }
+    .footer input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 10px;
+        border: none;
+    }
+    @media (max-width: 768px) {
+      .card .card-text {
+            font-size: 7px;
+            padding: 10px 20px;
+        }
+    }
+    @media (max-width: 768px) {
+      .card .card-title {
+            font-size: 10px;
+            padding: 10px 20px;
+        }
+    }
+    @media (max-width: 768px) {
+      .card .card-img {
+        width: 70pc;
+        }
+    }
+    .country {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    .icons i{
+      margin: 6px;
+    }
+    .footer-bottom {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #444;
+    }
+    .footer-bottom p{
+      color: #fff;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 45px;
+      margin-left: -50px;
+    }
+    @media (max-width: 768px) {
+      .container .navbar-brand {
+            font-size: 30px;
+            margin-left: 40px;
+        }
+    }
+    @media (max-width: 768px) {
+        .main {
+            flex-direction: column;
+        }
+      .main  .card-img, .video video {
+            width: 280px; /* Full width on small screens */
+            height: auto;
+        }
+    }
+    .navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+background-color: white;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-menu, .right-menu {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.logo img{
+width: 250px;
+height: 90px;
+}
+
+a {
+text-decoration: none;
+color: black;
+font-size: 14px;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.search-container {
+display: flex;
+align-items: center;
+border-bottom: 1px solid black;
+}
+
+.search-container input {
+border: none;
+outline: none;
+padding: 5px;
+}
+
+.search-container i {
+padding: 5px;
+}
+
+.fas {
+font-size: 18px;
+cursor: pointer;
+}
+.fragrance{
+font-weight: 100;
+margin-left: 60px;
+}

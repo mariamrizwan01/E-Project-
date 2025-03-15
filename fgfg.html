@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Price List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: -250px;
+            background: #f8f9fa;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+            transition: right 0.3s ease-in-out;
+            padding: 15px;
+        }
+        .sidebar.open {
+            right: 0;
+        }
+        .menu-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .download-btn {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+    <div class="sidebar" id="sidebar">
+        <h2>Perfume Price List</h2>
+        <ul>
+            <li>Dior - $120</li>
+            <li>Gucci - $110</li>
+            <li>Burberry - $95</li>
+            <li>Chanel - $140</li>
+            <li>CK - $85</li>
+            <li>Guerlain - $130</li>
+        </ul>
+        <a class="download-btn" onclick="downloadPriceList()">Download List</a>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+        
+        function downloadPriceList() {
+            let priceList = "Perfume Price List:\nDior - $120\nGucci - $110\nBurberry - $95\nChanel - $140\nCK - $85\nGuerlain - $130";
+            let blob = new Blob([priceList], { type: "text/plain" });
+            let link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "Perfume_Price_List.txt";
+            link.click();
+        }
+    </script>
+</body>
+</html>

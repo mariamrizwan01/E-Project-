@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women Cards</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+ <link rel="stylesheet" href="style.css">
 <style>
     * {
     margin: 0;
@@ -82,15 +82,7 @@ body {
     align-items: center;
     gap: 20px;
 }
-
-.logo {
-    font-size: 34px;
-    margin-top: -10px;
-    margin-left: 50px;
-    font-weight: bold;
-}
-
-a {
+a{
     text-decoration: none;
     color: black;
     font-size: 14px;
@@ -258,21 +250,22 @@ a:hover {
 </head>
 <body>
     <nav class="navbar">
-        <div class="left-menu">
-            <a href="/About Us/about_us.html">CONTACT US</a>
-            <a href="/Our Services/our_services.html">SERVICES</a>
-        </div>
         <div class="logo">
-            PAAREES PERFUMES <br>
-            <a class="fragrance" href="/Dashboard/women_cards.html">WOMEN</a>
-            <a class="fragrance" href="/Dashboard/men_cards.html">MEN</a>
+            <img src="logo.png" alt="">
+        </div>
+        <div class="left-menu">
+            <a href="/Dashboard/dashboard.html">HOME</a>
+            <a href="/Dashboard/women_cards.html">WOMEN</a>
+            <a  href="/Dashboard/men_cards.html">MEN</a>
+            <a href="/About Us/about_us.html">CONTACT US</a>
+            <a href="/Dashboard/pricelist.html">PRICE LIST</a>
+
         </div>
         <div class="right-menu">
             <div class="search-container">
                 <input type="text" placeholder="Search..">
                 <i class="fas fa-search"></i>
             </div>
-           <a href="/Sign Up/index.html"><i class="fas fa-user"></i></a> 
         </div>
     </nav>
     <h1 class="title">Men Fragrance</h1>
