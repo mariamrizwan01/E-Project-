@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 38px;
+    margin-top: 30px;
+    font-weight: 200;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: rgb(252, 252, 252);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    margin-left: -15px;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: -10px;
+    width: 89pc;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-menu, .right-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-container i {
+    padding: 5px;
+}
+
+.fas {
+    font-size: 18px;
+    cursor: pointer;
+}
+.fragrance{
+    font-weight: 100;
+    margin-left: 20px;
+}
+.card button {
+    background: rgb(255, 252, 250);
+    color: rgb(17, 16, 16);
+    border: 1px solid black;
+    width: 120px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card button:hover {
+    background: rgb(29, 28, 28);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+#images{
+    width: 150px;
+}
+.footer {
+            background-color: #000;
+            color: white;
+            margin-top: 20px;
+            padding: 40px 20px;
+            display: flex;
+            margin-left: -20px;
+            width: 90pc;
+            margin-bottom: -20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            width: 22%;
+            min-width: 200px;
+        }
+        .footer-column h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .footer-column a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+        .footer input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+          .card .card-text {
+                font-size: 7px;
+                padding: 10px 20px;
+            }
+        }
+        @media (max-width: 768px) {
+          .card .card-title {
+                font-size: 10px;
+                padding: 10px 20px;
+            }
+        }
+        @media (max-width: 768px) {
+          .card .card-img {
+            width: 70pc;
+            }
+        }
+        .country {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .icons i{
+          margin: 6px;
+        }
+        .footer-bottom {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+        .footer-bottom p{
+          color: #fff;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 45px;
+          margin-left: -50px;
+        }
+        @media (max-width: 768px) {
+          .container .navbar-brand {
+                font-size: 30px;
+                margin-left: 40px;
+            }
+        }
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+          .main  .card-img, .video video {
+                width: 280px; /* Full width on small screens */
+                height: auto;
+            }
+        }
+        .brand-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 90%;
+        }
+        .brand-container img {
+            width: 170px; /* Adjust the size as needed */
+            height: auto;
+            object-fit: contain;
+        }
+        @media (max-width: 768px) {
+            .brand-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .brand-container img {
+                width: 80px; /* Reduce size for smaller screens */
+            }
+        }
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="left-menu">
+            <a href="/Dashboard/dashboard.html">HOME</a>
+            <a href="/Dashboard/women_cards.html">WOMEN</a>
+            <a  href="/Dashboard/men_cards.html">MEN</a>
+            <a href="/About Us/about_us.html">CONTACT US</a>
+            <a href="/Dashboard/pricelist.html">PRICE LIST</a>
+
+        </div>
+        <div class="right-menu">
+            <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </nav>
+    <h1 class="title">Men Fragrance</h1>
+    <p>Dior Gucci Chanel Burberry Calvin Kalvin and Guerlain Perfume Available</p>
+    <div class="card-container">
+        <!-- Repeat for 12 Cards -->
+        <div class="card">
+            <img id="images" src="images men/1.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Burberry</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Burberry men/burberrymen.html"><button id="btn">See More</button></a>  
+            </div>
+        </div>
+        <div class="card">
+            <img id="images" src="images men/2.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Burberry</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Burberry men/burberrymen.html"><button id="btn">See More</button></a>  
+            </div>
+        </div>
+        <div class="card">
+            <img id="images" src="images men/3.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Burberry</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Burberry men/burberrymen.html"><button id="btn">See More</button></a>  
+            </div>
+        </div>
+        <div class="card">
+            <img id="images" src="images men/4.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Chanel</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Chanel Men Perfume/chanel_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div>
+        <div class="card">
+            <img id="images" src="images men/5.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Chanel</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Chanel Men Perfume/chanel_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> <div class="card">
+            <img id="images" src="images men/6.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Chanel</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Chanel Men Perfume/chanel_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div>    
+         <div class="card">
+            <img id="images" src="images men/7.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Gucci</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Gucci men/gucci_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+        <div class="card">
+            <img id="images" src="images men/8.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Gucci</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Gucci men/gucci_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+        <div class="card">
+            <img id="images" src="images men/9.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Gucci</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Gucci men/gucci_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+        <div class="card">
+            <img id="images" src="images men/10.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Dior</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/dior men perfume//dior_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+        <div class="card">
+            <img id="images" src="images men/11.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Dior</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/dior men perfume//dior_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+        <div class="card">
+            <img id="images" src="images men/12.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Dior</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/dior men perfume//dior_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+        <div class="card">
+            <img id="images" src="images men/13.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Guerlain</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/guerlain Women/guerlain_women.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+        <div class="card">
+            <img id="images" src="images men/14.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Guerlain</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/guerlain Men/guerlain_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div>  
+        <div class="card">
+            <img id="images" src="images men/15.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Guerlain</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/guerlain Men/guerlain_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+        <div class="card">
+            <img id="images" src="images men/16.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Guerlain</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/guerlain Men/guerlain_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+        <div class="card">
+            <img id="images" src="images men/17.png" alt="Card Image">
+            <div class="card-content">
+                <h3>CK</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Chanel Men Perfume/chanel_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+        <div class="card">
+            <img id="images" src="images men/18.png" alt="Card Image">
+            <div class="card-content">
+                <h3>CK</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Chanel Men Perfume/chanel_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div>     
+        <div class="card">
+            <img id="images" src="images men/19.png" alt="Card Image">
+            <div class="card-content">
+                <h3>CK</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Chanel Men Perfume/chanel_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+         <div class="card">
+            <img id="images" src="images men/20.png" alt="Card Image">
+            <div class="card-content">
+                <h3>CK</h3>
+                <p>Luxury Fragrance collection.</p>
+                <a href="/Brands/Chanel Men Perfume/chanel_men.html"><button id="btn">See More</button></a>  
+            </div>
+        </div> 
+    </div>
+        <!--Footer Page-->
+        <footer class="footer">
+            <div class="footer-column">
+                <h3>MAY WE HELP YOU?</h3>
+                <a href="/About Us/about_us.html">Contact Us</a>
+                <a href="/Our Services/service.html">Our Services</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="footer-column">
+                <h3>Available Brands</h3>
+                <a href="/Brands/dior men perfume/dior_men.html">Gucci Men</a>
+                <a href="/Brands/Gucci_women Perfume/gucci_women.html">Gucci women</a>
+                <a href="/Brands/Burberry men/burberrymen.html">Burberry Men </a>
+                <a href="/Brands/Burberry Women/buberry_women.html">Burberry Women </a>
+                <a href="/Brands/dior men perfume/dior_men.html">Dior Men </a>
+                <a href="/Brands/dior_women/dior_women.html">Dior Women </a>
+                <a href="/Brands/Chanel Men Perfume/chanel_men.html">Chanel Men </a>
+                <a href="/Brands/Chanel women/chanel_women.html">Chanel Women </a>
+                <a href="/Brands/CK Men/ck_men.html">CK Men </a>
+                <a href="/Brands/CK Women/ck_women.html">CK Women </a>
+            </div>
+            <div class="footer-column">
+                <h3>STORE LOCATOR</h3>
+                <input type="text" placeholder="Country/Region, City">
+            </div>
+            <div class="footer-column">
+                <h3>Sign Up for Paarees Perfume updates</h3>
+                <p>By entering your email address below, you consent to receiving our newsletter...</p>
+                <input type="email" placeholder="Email">
+                <p class="country">COUNTRY/REGION</p>
+                <p>Karachi, Pakistan </p>
+            </div>
+            <div class="footer-bottom">
+              <p>PAAREES PERFUMES</p>
+          </div>
+        </footer>
+</body>
+</html>

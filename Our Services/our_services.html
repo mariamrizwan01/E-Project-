@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        :root {
+            --primery-color: black;
+            --secandary-color: grey;
+        }
+        #service-section {
+            min-height: 740px;
+            width: 100%;
+            background-image: url(https://i.pinimg.com/736x/0d/12/d2/0d12d2b0929e343e3ebe24bf32350dcb.jpg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #service-section h2 {
+            color: white;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        #service-section h2::after,
+        #service-section h2::before {
+            position: absolute;
+            content: "";
+            height: 0;
+            width: 0;
+            border-top: 20px solid transparent;
+            border-left: 20px solid var(--primery-color);
+        }
+        #service-section h2::after {
+            left: -30px;
+        }
+        #service-section h2::before {
+            top: 8px;
+            left: -30px;
+        }
+        #service-section #paragraph {
+            width: 45%;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            line-height: 1.5rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            z-index: 9;
+            margin-top: 20px;
+        }
+        .cards .card {
+            height: 280px;
+            width: 450px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 0 8%;
+            background: rgb(138, 130, 85);
+            position: relative;
+            border-radius: 10px;
+        }
+        .cards .card::before {
+            position: absolute;
+            content: " ";                                                                                                                                           
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            background: rgb(10, 9, 9);
+            transform: rotate(0deg);
+            z-index: -1;
+        }
+        .cards .card:hover::before {
+            transform: rotate(10deg);
+        }
+        .cards .card i {
+            font-size: 2.5rem;
+            color: var(--primery-color);
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+        .cards .card h3 {
+            font-size: 1.8rem;
+            color: rgb(63, 62, 62);
+            margin-bottom: 10px;
+        }
+        .cards .card .content p {
+            color: black;
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            #service-section h2 {
+                font-size: 3rem;
+            }
+            #service-section #paragraph {
+                width: 60%;
+            }
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .cards .card {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #service-section h2 {
+                font-size: 2.5rem;
+            }
+            #service-section #paragraph {
+                width: 80%;
+            }
+            .cards {
+                grid-template-columns: 1fr;
+            }
+            .cards .card {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #service-section h2 {
+                font-size: 2rem;
+            }
+            #service-section #paragraph {
+                font-size: 0.9rem;
+                width: 90%;
+            }
+            .cards .card {
+                width: 100%;
+            }
+            .cards .card i {
+                font-size: 2rem;
+            }
+            .cards .card h3 {
+                font-size: 1.5rem;
+            }
+            .cards .card .content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="service-section">
+            <h2>Our Services</h2>
+            <p id="paragraph">These services can help elevate the brand and offer added value to your customers. Let me know if you'd like more ideas or specifics for any of them!</p>
+            <div class="cards">
+                <div class="card">
+                    <i class="fa-brands fa-react"></i>
+                    <div class="content">
+                        <h3>Perfume Consultation</h3>
+                        <p>At Parees Perfumes, we believe that a fragrance should be as unique as the person wearing it. Our expert fragrance consultants are here to guide you in discovering a scent that perfectly aligns with your personality, style, and preferences.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-regular fa-gem"></i>
+                    <div class="content">
+                        <h3>Fragrance Refills</h3>
+                        <p>Provide a service where customers can refill their perfume bottles at a lower cost or with eco-friendly options. Expand your offerings to include candles, diffusers, and room sprays with the same signature scents.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-rocket"></i>
+                    <div class="content">
+                        <h3>Perfume Subscriptions</h3>
+                        <p>Experience the luxury of always having a fresh fragrance with Parees Perfumes' exclusive Perfume Subscription Service. Tailored to your personal preferences, our subscription service delivers a curated selection of premium perfumes right to your doorstep every month.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
