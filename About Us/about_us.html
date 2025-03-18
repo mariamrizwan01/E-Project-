@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services Section</title>
+    <title>Our Services & Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
         * {
@@ -12,49 +12,6 @@
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
-        .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -20px;
-    margin-left: -10px;
-    width: 89pc;
-    padding: 15px 20px;
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.left-menu, .right-menu {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-}
-
-.search-container input {
-    border: none;
-    outline: none;
-    padding: 5px;
-}
-
-.search-container i {
-    padding: 5px;
-}
-
         body {
             display: flex;
             flex-direction: column;
@@ -64,6 +21,8 @@ a:hover {
             background: #f8f8f8;
             padding: 20px;
         }
+
+        /* Services Section */
         .services-container {
             text-align: center;
         }
@@ -71,6 +30,7 @@ a:hover {
             font-family: 'Times New Roman', Times, serif;
             font-size: 32px;
             color: #333;
+            margin-bottom: 10px;
         }
         .services-container p {
             color: #666;
@@ -89,7 +49,7 @@ a:hover {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 250px;
             text-align: center;
-            transition: 0.3s;
+            transition: transform 0.3s;
         }
         .service-box:hover {
             transform: translateY(-5px);
@@ -107,6 +67,7 @@ a:hover {
             font-size: 14px;
         }
 
+        /* Contact Section */
         .contact-container {
             display: flex;
             flex-direction: row;
@@ -118,6 +79,7 @@ a:hover {
             max-width: 700px;
             margin-top: 40px;
         }
+
         .contact-info {
             background: #000408;
             color: white;
@@ -139,6 +101,7 @@ a:hover {
             font-size: 18px;
             color: white;
         }
+
         .contact-form {
             padding: 30px;
             width: 60%;
@@ -162,15 +125,27 @@ a:hover {
             border-radius: 5px;
             cursor: pointer;
             width: 100%;
-            transition: 0.3s;
+            transition: background 0.3s;
         }
         .contact-form button:hover {
-            background: #000408;
+            background: #002244;
         }
         .success-message {
             color: rgb(13, 94, 13);
             margin-top: 10px;
             display: none;
+        }
+
+        .map-container {
+            margin-top: 40px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            border-radius: 10px;
         }
 
         /* Responsive Design */
@@ -182,6 +157,7 @@ a:hover {
                 width: 100%;
             }
         }
+
         @media (max-width: 480px) {
             .services-container h1 {
                 font-size: 24px;
@@ -190,75 +166,33 @@ a:hover {
                 width: 100%;
             }
         }
-  .logo img{
-    width: 180px;
-    height: 60px;
-  }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="/Dashboard/logo.png" alt="">
-        </div>
-        <div class="left-menu">
-            <a href="/Dashboard/dashboard.html">HOME</a>
-            <a href="/Dashboard/women_cards.html">WOMEN</a>
-            <a  href="/Dashboard/men_cards.html">MEN</a>
-            <a href="/About Us/about_us.html">CONTACT US</a>
-            <a href="/Dashboard/pricelist.html">PRICE LIST</a>
-
-        </div>
-        <div class="right-menu">
-            <div class="search-container">
-                <input type="text" placeholder="Search..">
-                <i class="fas fa-search"></i>
-            </div>
-        </div>
-    </nav>
     <div class="services-container">
-        <h1>Our Services <br> and Other Informations.</h1>
-        <p>We Provide The Best In Class Services For Our Customers</p>
+        <h1>Our Services & Other Information</h1>
+        <p>We provide the best-in-class services for our customers.</p>
         <div class="services">
-            <div class="service-box">
-                <i class="fa-solid fa-truck-fast"></i>
-                <h3>Shipping</h3>
-                <p>We offer fast, secure, and reliable shipping services Worldwide.</p>
-            </div>
-            <div class="service-box">
-                <i class="fa-solid fa-phone"></i>
-                <h3>Customer Services</h3>
-                <p>We provide 24/7 customer support to ensure a seamless experience for you.</p>
-            </div>
-            <div class="service-box">
-                <i class="fa-solid fa-lock"></i>
-                <h3>Secure Payment</h3>
-                <p>We ensure secure and encrypted payment methods for a safe transaction.</p>
-            </div>
-            <div class="service-box">
-                <i class="fa-solid fa-envelope"></i>
-                <h3>Contact Us</h3>
-                <p>Have questions? Contact us anytime for support and inquiries.</p>
-            </div>
+            <div class="service-box"><i class="fa-solid fa-truck-fast"></i><h3>Shipping</h3><p>Fast, secure, and reliable worldwide shipping.</p></div>
+            <div class="service-box"><i class="fa-solid fa-phone"></i><h3>Customer Support</h3><p>24/7 support for a seamless customer experience.</p></div>
+            <div class="service-box"><i class="fa-solid fa-lock"></i><h3>Secure Payment</h3><p>Safe and encrypted payment methods.</p></div>
+            <div class="service-box"><i class="fa-solid fa-envelope"></i><h3>Contact Us</h3><p>Reach out anytime for inquiries and support.</p></div>
         </div>
-    </div> 
+    </div>
 
     <div class="contact-container">
         <div class="contact-info">
             <h2>Contact Info</h2>
-            <p>Dolmen Mall, Tariq Road</p>
-            <p>Karachi, Pakistan</p>
+            <p>Dolmen Mall, Tariq Road, Karachi</p>
             <p>Paareesperfume@gmail.com</p>
             <p>0331-3557886</p>
             <div class="social-icons">
-                <a href="#" class="fa-brands fa-facebook"></a>
-                <a href="#" class="fa-brands fa-twitter"></a>
-                <a href="#" class="fa-brands fa-instagram"></a>
-                <a href="#" class="fa-brands fa-linkedin"></a>
-                <a href="#" class="fa-brands fa-github"></a>
+                <a href="#" aria-label="Facebook" class="fa-brands fa-facebook"></a>
+                <a href="https://github.com/mariamrizwan01" aria-label="Github" class="fa-brands fa-github"></a>
+                <a href="https://www.instagram.com/_mariam_rizwan" aria-label="Instagram" class="fa-brands fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/mariam-rizwan-a6272727b" aria-label="LinkedIn" class="fa-brands fa-linkedin"></a>
             </div>
         </div>
-
         <div class="contact-form">
             <h2>Send a Message</h2>
             <input type="text" id="firstName" placeholder="First Name">
@@ -267,27 +201,31 @@ a:hover {
             <input type="text" id="mobile" placeholder="Mobile Number">
             <textarea id="message" rows="4" placeholder="Write your message here..."></textarea>
             <button onclick="sendMessage()">Send</button>
-            <p class="success-message" id="successMessage">Thank you! Your message has been sent.</p>
-        </div>
+            <p class="success-message" id="successMessage">Thank you! Your message has been sent.</p> <br>
+          </div>
+          </div>
+          <script>
+            function sendMessage() {
+                let firstName = document.getElementById("firstName").value;
+                let lastName = document.getElementById("lastName").value;
+                let email = document.getElementById("email").value;
+                let mobile = document.getElementById("mobile").value;
+                let message = document.getElementById("message").value;
+                
+                if (firstName && lastName && email && mobile && message) {
+                    document.getElementById("successMessage").style.display = "block";
+                    setTimeout(() => {
+                        document.getElementById("successMessage").style.display = "none";
+                    }, 3000);
+                } else {
+                    alert("Please fill in all fields.");
+                }
+            }
+          </script>>
     </div>
 
-    <script>
-        function sendMessage() {
-            let firstName = document.getElementById("firstName").value;
-            let lastName = document.getElementById("lastName").value;
-            let email = document.getElementById("email").value;
-            let mobile = document.getElementById("mobile").value;
-            let message = document.getElementById("message").value;
-            
-            if (firstName && lastName && email && mobile && message) {
-                document.getElementById("successMessage").style.display = "block";
-                setTimeout(() => {
-                    document.getElementById("successMessage").style.display = "none";
-                }, 3000);
-            } else {
-                alert("Please fill in all fields.");
-            }
-        }
-    </script>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.6254012511886!2d67.06005937443027!3d24.87664054461175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33eecaef72355%3A0x3c9cca44c77de888!2sDolmen%20Mall%20Tariq%20Road!5e0!3m2!1sen!2s!4v1742153654067!5m2!1sen!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </body>
 </html>
