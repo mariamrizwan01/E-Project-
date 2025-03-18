@@ -262,7 +262,7 @@ a:hover {
     
     function downloadPriceList() {
         let priceList = "Perfume Price List:\nDior - $120\nGucci - $110\nBurberry - $95\nChanel - $140\nCK - $85\nGuerlain - $130";
-        let blob = new Blob([priceList], { type: "text/plain" });
+        let blob = new Blob([priceList], { type: "text/plain"});
         let link = document.createElement("a");
         link.href = URL.createObjectURL(blob);
         link.download = "Perfume_Price_List.txt";
