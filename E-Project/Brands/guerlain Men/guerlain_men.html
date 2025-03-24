@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+   ">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- custom js file link  -->
+   <script src="js/script.js" defer></script>
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+ <style>
+   .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .left-menu{
+      display: flex;
+      gap: 16px;
+      margin-right: 50px;
+      
+      }
+      
+      .logo img{
+      width: 190px;
+      height: 80px;
+      }
+      
+      a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      }
+      
+      a:hover {
+      text-decoration: underline;
+      }
+      #addtocart{
+        margin-top: -80px;
+        font-size: 20px;
+        margin-left: 5px;
+      }
+      /* Dropdown menu */
+      .dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: white;
+          list-style: none;
+          padding: 0;
+          min-width: 150px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+      
+      .dropdown-menu li {
+          position: relative;
+      }
+      .dropdown{
+         list-style: none;
+      
+      }
+      /* Sub-dropdown */
+      .sub-dropdown a{
+         font-size: 16px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+      }
+      .sub-menu {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          background: white;
+          list-style: none;
+          padding: 0;
+          min-width: 150px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      
+      .sub-dropdown:hover .sub-menu {
+          display: block;
+      }
+      
+      /* Hover Effects */
+      .navbar a:hover,
+      .dropdown-menu a:hover,
+      .sub-menu a:hover {
+          background: #f0f0f0;
+      }
+      #drop{
+         font-size: 18px;
+      }
+
+</style>
+</head>
+<body>
+   <!--Side bar-->
+   <nav class="navbar">
+    <div class="logo">
+        <img src="/Dashboard/logo.png" alt="">
+    </div>
+    <div class="left-menu">
+      <a href="/E-Project/index.html">HOME</a>
+      <a href="/Dashboard/women_cards.html">WOMEN</a>
+        <a  href="/Dashboard/men_cards.html">MEN</a>
+        <li class="dropdown">
+        <a href="#">BRANDS<i id="drop" class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+              <li class="sub-dropdown">
+                  <a href="#">Dior </a>
+                  <ul class="sub-menu">
+                      <li><a href="/Brands/dior men perfume/dior_men.html">Dior Men</a></li>
+                      <li><a href="/Brands/dior_women/dior_women.html">Dior Women</a></li>
+                  </ul>
+              </li>
+              <li class="sub-dropdown">
+               <a href="#">Burberry</a>
+               <ul class="sub-menu">
+                   <li><a href="/Brands/Burberry men/burberrymen.html">Burberry Men</a></li>
+                   <li><a href="/Brands/Burberry Women/buberry_women.html">Burberry Women</a></li>
+               </ul>
+           </li>
+              <li class="sub-dropdown">
+               <a href="#">CK</a>
+               <ul class="sub-menu">
+                   <li><a href="/Brands/CK Men/ck_men.html">CK Men</a></li>
+                   <li><a href="/Brands/CK Women/ck_women.html">CK Women</a></li>
+               </ul>
+           </li>
+           <li class="sub-dropdown">
+            <a href="#">Guerlain</a>
+            <ul class="sub-menu">
+                <li><a href="/Brands/guerlain Men/guerlain_men.html">Guerlain Men</a></li>
+                <li><a href="/Brands/guerlain Women/guerlain_women.html">Guerlain Women</a></li>
+            </ul>
+        </li>
+              <li class="sub-dropdown">
+                  <a href="#">Gucci </a>
+                  <ul class="sub-menu">
+                      <li><a href="/Brands/Gucci men/gucci_men.html">Gucci Men</a></li>
+                      <li><a href="/Brands/Gucci_women Perfume/gucci_women.html">Gucci Women</a></li>
+                  </ul>
+              </li>
+              <li class="sub-dropdown">
+               <a href="#">Chanel </a>
+               <ul class="sub-menu">
+                   <li><a href="/Brands/Chanel Men Perfume/chanel_men.html">Chanel Men</a></li>
+                   <li><a href="/Brands/Chanel women/chanel_women.html">Chanel Women</a></li>
+               </ul>
+           </li>
+          </ul>
+      </li>      
+         <a href="/Dashboard/pricelist.html">PRICE LIST</a>
+        <a href="/About Us/about_us.html">CONTACT US</a>
+    </div>
+</nav>
+       <!--Add to Card-->
+       <div id="carticon">
+        <i id="addtocart"  class="fa-solid fa-cart-shopping"></i>
+        <span  class="cart-item-count" style="margin-top: -90px; margin-right:-8px;"></span></div>
+
+       </div>
+        <div class="cart">
+          <h2 class="cart-tittle">Your Cart</h2>
+          <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="images/1.png" class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-tittle">Miss Diro Perfume</h2>
+                    <span class="cart-price">Rs.52,377</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="fa-solid fa-trash cart-remove"></i>
+             </div> -->
+        </div>
+          <div class="total">
+            <div class="total-tittle">Total</div>
+            <div class="total-price">Rs 0</div>
+          </div>
+          <button class="btn-buy">Buy Now</button>
+          <i class="fa-solid fa-xmark" id="cart-close"></i>
+        </div>
+<div class="container">
+   <h3 class="title">GUERLAIN</h3>
+  
+   <img src="images/fragrance1.png" alt="" style="width: 90pc; margin-left: -140px;">
+   <h4 class="tagline">MEN FRAGRANCES</h4>
+<section class="hero">
+    <div class="hero-content">
+        <p>Unique and powerful, a man’s fragrance is the most beautiful weapon of seduction. <br> Revealing his potential, Guerlain fragrances enhance a man’s beauty. From the woody <br> notes of L’Homme Idéal to the powerful scents of Guerlain Homme, men’s fragrance is <br> made original and iconic. Discover all the freshness of an eau de toilette or the pure <br> intensity of an eau de parfum by Guerlain.</p>
+    </div>
+</section>
+<section class="categories">
+    <div class="category">
+        <img src="images/fragrances.png" alt="Fragrances">
+        <p>Coco <br>Mademoiselle</p>
+    </div>
+    <div class="category">
+        <img src="images/chance Eau.png" alt="Skincare">
+        <p> chance Eau <br>Tendre</p>
+    </div>
+    <div class="category">
+        <img src="images/Chance Eau Fraich.png" alt="Bath & Shaving">
+        <p>Chance Eau <br> Fraich </p>
+    </div>
+    <div class="category">
+        <img src="images/chance.png" alt="Exceptional Pieces">
+        <p>Chance</p>
+    </div>
+</section>
+   <div class="products-container">
+      <div class="product" data-name="p-1">
+         <img class="img" src="images/1.png" alt="">
+         <h3>GUERLAIN HOMME</h3>
+         <div class="price">$145.00</div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="images/2.png" alt="">
+         <h3>HERITAGE</h3>
+         <div class="price">Rs.56,907</div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="images/3.png" alt="" style="align-items: center; margin-left: -10px;">
+         <h3>L'INSTANT GUERLAIN POUR HOMME<h3>
+         <div class="price">$130.00</div>
+      </div>
+</div>
+<h4 class="tagline">Absolus Allegoria</h4>
+<section class="hero">
+  <div class="hero-content">
+      <p>The Allegoria fragrance collection celebrates the wonders of the world. It explores the <br> inexhaustible inspiration of multi-faceted Nature, from noon to dusk, in a rainbow of fragrant <br> shades. It is completed by Absolus Allegoria, the new absolute perfume collection: powerful eau <br> de parfums full of mystery, capturing the striking contrasts of Nature at dusk.</p>
+  </div> <br>
+  <img src="images/Exceptional_log.png" alt="" style="margin-left:-150px ;
+   width: 90pc;">
+<div class="products-container">
+   <div class="product" data-name="p-4">
+      <img class="img" src="images/4.png" alt="" style="margin-left: -10px;">
+      <h3>ROSE AMIRA</h3>
+      <div class="price">$240.00</div>
+   </div>
+
+   <div class="product" data-name="p-5">
+      <img src="images/5.png" alt="" style="align-items: center; margin-left: -10px;">
+      <h3>CUIR INTENSE</h3>
+      <div class="price">$240.00</div>
+   </div>
+
+   <div class="product" data-name="p-6">
+      <img src="images/6.png" alt="" style="margin-left: -10px;">
+      <h3>SANTAL ROYAL</h3>
+      <div class="price">$240.00</div>
+     </div> 
+    <div class="product" data-name="p-7">
+        <img src="images/7.png" alt="" >
+        <h3>LES COLOGNES</h3>
+        <div class="price">$118.00</div>
+       </div>
+       <div class="product" data-name="p-8">
+        <img src="images/8.png" alt="" style="margin-left: -10px;">
+        <h3>LES COLOGNES</h3>
+        <div class="price">$118.00</div>
+       </div> 
+        <div class="product" data-name="p-9">
+        <img src="images/9.png" alt="" style="margin-left: -10px;">
+        <h3>ROSE AMIRA</h3>
+        <div class="price">$329.00</div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+      <!--Footer Page-->
+    <footer class="footer" style="margin-top: 20px; margin-bottom: -190px;">
+     <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
+</div> 
+         <!--Product detail -->
+<div class="products-preview">
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="images/1.png" alt="">
+      <h3>GUERLAIN HOME</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>HERITAGE</p>
+      <div class="price">$140.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="images/2.png" alt="">
+      <h3>L'INTENSE GUERLAIN POUR HOMME</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>EAU DA PARFUME </p>
+      <div class="price">$140.00</div>
+      <div class="buttons">
+        <a href="#" class="buy">Add to Cart</a>
+    </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/3.png" alt="" style="margin-left: -30px;">
+      <h3>Sauvage Elixir</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>EAU DA PARFUME</p>
+      <div class="price">130.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="images/4.png" alt="" style="margin-left: -30px;">
+      <h3>ROSE AMIRA</h3>
+            <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>EAU DA PARFUME</p>
+      <div class="price">$240.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="images/5.png" alt="" style="margin-left: -30px;">
+      <h3>CUIR INTENSE</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>EAU DA PARFUME</p>
+      <div class="price">$240.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="images/6.png" alt="" style="margin-left: -30px;">
+      <h3>SANTAL ROYAL</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>EAU DA PARFUME</p>
+      <div class="price">$240.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="images/7.png" alt="">
+      <h3>LES COLOGNES</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>EAU DA PARFUME</p>
+      <div class="price">$118.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-8">
+      <i class="fas fa-times"></i>
+      <img src="images/8.png" style="margin-left: -30px;">
+      <h3>LES COLOGNES</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>EAU DA PARFUME</p>
+      <div class="price">$118.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-9">
+      <i class="fas fa-times"></i>
+      <img src="images/9.png" alt="" style="margin-left: -10px;">
+      <h3>ROSE AMIRA</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+        </div>
+      <p>EAU DA PARFUME</p>
+      <div class="price">$329.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+    </div>
+</div>
+  </body>
+</html>

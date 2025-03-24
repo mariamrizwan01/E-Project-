@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+   ">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- custom js file link  -->
+   <script src="js/script.js" defer></script>
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+ <style>
+   .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .left-menu{
+      display: flex;
+      gap: 16px;
+      margin-right: 50px;
+      
+      }
+      
+      .logo img{
+      width: 190px;
+      height: 80px;
+      }
+      
+      a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      }
+      
+      a:hover {
+      text-decoration: underline;
+      }
+      #addtocart{
+        margin-top: -80px;
+        font-size: 20px;
+        margin-left: 5px;
+      }
+      /* Dropdown menu */
+      .dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: white;
+          list-style: none;
+          padding: 0;
+          min-width: 150px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+      
+      .dropdown-menu li {
+          position: relative;
+      }
+      .dropdown{
+         list-style: none;
+      
+      }
+      /* Sub-dropdown */
+      .sub-dropdown a{
+         font-size: 16px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+      }
+      .sub-menu {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          background: white;
+          list-style: none;
+          padding: 0;
+          min-width: 150px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      
+      .sub-dropdown:hover .sub-menu {
+          display: block;
+      }
+      
+      /* Hover Effects */
+      .navbar a:hover,
+      .dropdown-menu a:hover,
+      .sub-menu a:hover {
+          background: #f0f0f0;
+      }
+      #drop{
+         font-size: 18px;
+      }
+
+</style>
+</head>
+<body>
+   <!--Side bar-->
+   <nav class="navbar">
+    <div class="logo">
+        <img src="/Dashboard/logo.png" alt="">
+    </div>
+    <div class="left-menu">
+      <a href="/E-Project/index.html">HOME</a>
+      <a href="/Dashboard/women_cards.html">WOMEN</a>
+        <a  href="/Dashboard/men_cards.html">MEN</a>
+        <li class="dropdown">
+        <a href="#">BRANDS<i id="drop" class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+              <li class="sub-dropdown">
+                  <a href="#">Dior </a>
+                  <ul class="sub-menu">
+                      <li><a href="/Brands/dior men perfume/dior_men.html">Dior Men</a></li>
+                      <li><a href="/Brands/dior_women/dior_women.html">Dior Women</a></li>
+                  </ul>
+              </li>
+              <li class="sub-dropdown">
+               <a href="#">Burberry</a>
+               <ul class="sub-menu">
+                   <li><a href="/Brands/Burberry men/burberrymen.html">Burberry Men</a></li>
+                   <li><a href="/Brands/Burberry Women/buberry_women.html">Burberry Women</a></li>
+               </ul>
+           </li>
+              <li class="sub-dropdown">
+               <a href="#">CK</a>
+               <ul class="sub-menu">
+                   <li><a href="/Brands/CK Men/ck_men.html">CK Men</a></li>
+                   <li><a href="/Brands/CK Women/ck_women.html">CK Women</a></li>
+               </ul>
+           </li>
+           <li class="sub-dropdown">
+            <a href="#">Guerlain</a>
+            <ul class="sub-menu">
+                <li><a href="/Brands/guerlain Men/guerlain_men.html">Guerlain Men</a></li>
+                <li><a href="/Brands/guerlain Women/guerlain_women.html">Guerlain Women</a></li>
+            </ul>
+        </li>
+              <li class="sub-dropdown">
+                  <a href="#">Gucci </a>
+                  <ul class="sub-menu">
+                      <li><a href="/Brands/Gucci men/gucci_men.html">Gucci Men</a></li>
+                      <li><a href="/Brands/Gucci_women Perfume/gucci_women.html">Gucci Women</a></li>
+                  </ul>
+              </li>
+              <li class="sub-dropdown">
+               <a href="#">Chanel </a>
+               <ul class="sub-menu">
+                   <li><a href="/Brands/Chanel Men Perfume/chanel_men.html">Chanel Men</a></li>
+                   <li><a href="/Brands/Chanel women/chanel_women.html">Chanel Women</a></li>
+               </ul>
+           </li>
+          </ul>
+      </li>      
+         <a href="/Dashboard/pricelist.html">PRICE LIST</a>
+        <a href="/About Us/about_us.html">CONTACT US</a>
+    </div>
+</nav>
+       <!--Add to Card-->
+       <div id="carticon">
+        <i id="addtocart" class="fa-solid fa-cart-shopping"></i>
+        <span  class="cart-item-count" style="margin-top: -90px; margin-right:-8px;"></span></div>
+
+        <div class="cart">
+          <h2 class="cart-tittle">Your Cart</h2>
+          <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="images/1.png" class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-tittle">Miss Diro Perfume</h2>
+                    <span class="cart-price">Rs.52,377</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="fa-solid fa-trash cart-remove"></i>
+             </div> -->
+        </div>
+          <div class="total">
+            <div class="total-tittle">Total</div>
+            <div class="total-price">Rs 0</div>
+          </div>
+          <button class="btn-buy">Buy Now</button>
+          <i class="fa-solid fa-xmark" id="cart-close"></i>
+        </div>
+<div class="container">
+   <h3 class="title">Calvin Klein</h3>
+   <img src="images/fragrance1.png" alt="" style="width: 90pc; margin-left: -150px;">
+
+</section>
+<h3 class="tagline1"> MEN FRAGRANCES </h3>
+<h3 class="tagline1">Introducing Eternity Amber Essence</h3>
+           <!--Fragrance Cart-->
+      
+   <div class="products-container">
+      <div class="product" data-name="p-1">
+         <img class="img" src="images/1.png" alt="">
+         <h3>Eternity For Men Amber Essence Parfum Intense</h3>
+         <div class="price">$95.00 - $149.00</div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="images/2.png" alt="">
+         <h3>Eternity For Men Eau De Parfum</h3>
+         <div class="price">$120.00 - $149.00</div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="images/3.png" alt="" style="align-items: center; margin-left: -10px;">
+         <h3>Obsession Eau De Toilette For Men</h3>
+         <div class="price">$95.00</div>
+      </div>
+</div>
+   <!-- Exception Cart-->
+   
+  <div class="products-container">
+   <div class="product" data-name="p-4">
+      <img class="img" src="images/4.png" alt="" style="margin-left: -10px;">
+      <h3>Defy Eau De Parfum</h3>
+      <div class="price">$113.00 - $146.00</div>
+   </div>
+
+   <div class="product" data-name="p-5">
+      <img src="images/5.png" alt="" style="align-items: center; margin-left: -10px;">
+      <h3>ck one essence parfum intense</h3>
+      <div class="price">$68.00 - $86.00</div>
+   </div>
+   
+   <div class="product" data-name="p-6">
+      <img src="images/6.png" alt="" style="margin-left: -10px;">
+      <h3>ck one</h3>
+      <div class="price">$75.00 - $89.00</div>
+     </div>
+     
+      <div class="product" data-name="p-7">
+        <img src="images/7.png" alt="" >
+        <h3>Eternity Aromatic Essence For Men Gift Set</h3>
+        <div class="price"> $103.70</div>
+       </div>
+       <div class="product" data-name="p-8">
+        <img src="images/8.png" alt="" style="margin-left: -10px;">
+        <h3>ck one gift set</h3>
+        <div class="price">$90.00</div>
+       </div> 
+        <div class="product" data-name="p-9">
+        <img src="images/9.png" alt="" style="margin-left: -10px;">
+        <h3>Defy Eau De Toilette Gift Set</h3>
+        <div class="price">$105.00</div>
+      </div>
+</div>
+<div class="expcetion">
+    <img  style="margin-left: -30px;" src="images/10.png" alt="">
+ <img src="images/11.png" alt="">
+ <img src="images/12.png" alt="">
+ </div>
+    <h3 class="title" style="margin-top: 60px;">CHANEL</h3>
+    <!--Footer Page-->
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
+</div> 
+         <!--Product detail -->
+<div class="products-preview">
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="images/1.png" alt="">
+      <h3>Eternity For Men Amber Essence Parfum Intense</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 3.4 FL.OZ )</span>
+      </div>
+      <p>Eau de Parfum Spray</p>
+      <div class="price">$95.00 - $149.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="images/2.png" alt="">
+      <h3>Eternity Aromatic Essence For Men</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 3.4 FL.OZ )</span>
+      </div>
+      <p>Eau de Parfum Spray </p>
+      <div class="price">$120.00 - $149.00</div>
+      <div class="buttons">
+        <a href="#" class="buy">Add to Cart</a>
+    </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/3.png" alt="" style="margin-left: -30px;">
+      <h3>Obsession Eau De Toilette For Men</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 3.4 FL.OZ )</span>
+      </div>
+      <p>Eau de Parfum Spray</p>
+      <div class="price">$95.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="images/4.png" alt="" style="margin-left: -30px;">
+      <h3>Defy Eau De Parfum</h3>
+            <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 6.8 FL.OZ )</span>
+      </div>
+      <p>All-Over Spray</p>
+      <div class="price">$113.00 - $146.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="images/5.png" alt="" style="margin-left: -30px;">
+      <h3>ck one essence parfum intense</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 3.4 FL.OZ )</span>
+      </div>
+      <p>All-Over Spray</p>
+      <div class="price">$68.00 - $86.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="images/6.png" alt="" style="margin-left: -30px;">
+      <h3>ck one</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 3.4 FL.OZ )</span>
+      </div>
+      <p>Eau de Parfum</p>
+      <div class="price">$75.00 - $89.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="images/7.png" alt="">
+      <h3>Eternity Aromatic Essence For Men Gift Set</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+        
+      </div>
+      <p>All-Over Spray</p>
+      <div class="price"> $103.70</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-8">
+      <i class="fas fa-times"></i>
+      <img src="images/8.png" style="margin-left: -30px;">
+      <h3>ck one gift set</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 3.4 FL.OZ )</span>
+      </div>
+      <p>All-Over Spray</p>
+      <div class="price">$90.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+    </div>
+    <div class="preview" data-target="p-9">
+      <i class="fas fa-times"></i>
+      <img src="images/9.png" alt="" style="margin-left: -10px;">
+      <h3>Defy Eau De Toilette Gift Set</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 3.4 FL.OZ )</span>
+        </div>
+      <p>All-Over Spray</p>
+      <div class="price">$105.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">Add to Cart</a>
+      </div>
+    </div>
+</div>
+  </body>
+</html>

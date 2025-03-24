@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price List </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .left-menu, .right-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 34px;
+    margin-top: -10px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+        .footer {
+            background-color: #000;
+            color: white;
+            margin-top: 20px;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            width: 22%;
+            min-width: 200px;
+        }
+        .footer-column h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .footer-column a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+        .footer input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+          .card .card-text {
+                font-size: 7px;
+                padding: 10px 20px;
+            }
+        }
+        @media (max-width: 768px) {
+          .card .card-title {
+                font-size: 10px;
+                padding: 10px 20px;
+            }
+        }
+        @media (max-width: 768px) {
+          .card .card-img {
+            width: 70pc;
+            }
+        }
+        .country {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .icons i{
+          margin: 6px;
+        }
+        .footer-bottom {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+        .footer-bottom p{
+          color: #fff;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 45px;
+          margin-left: -50px;
+        }
+        @media (max-width: 768px) {
+          .container .navbar-brand {
+                font-size: 30px;
+                margin-left: 40px;
+            }
+        }
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+          .main  .card-img, .video video {
+                width: 280px; /* Full width on small screens */
+                height: auto;
+            }
+        }
+        .title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 30px;
+    font-weight: 200;
+}
+.container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        .download-btn {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background: #000000;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        .download-btn:hover{
+            text-decoration: none;
+            color: #ffffff;
+            background: #444141;
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="left-menu">
+            <a href="/Dashboard/dashboard.html">HOME</a>
+            <a href="/Dashboard/women_cards.html">WOMEN</a>
+            <a  href="/Dashboard/men_cards.html">MEN</a>
+            <a href="/About Us/about_us.html">CONTACT US</a>
+            <a href="/Dashboard/pricelist.html">PRICE LIST</a>
+        </div>
+        <div class="right-menu">
+            <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="title">Price List</h1>
+        <table>
+            <tr>
+                <th>Brand</th>
+                <th>Price ($)</th>
+            </tr>
+            <tr>
+                <td>Dior</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>Gucci</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Burberry</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Chanel</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Calvin Klein</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Guerlain</td>
+                <td>180</td>
+            </tr>
+        </table>
+        <a class="download-btn" onclick="downloadPriceList()">Download List</a>
+    </div>
+   <!--Footer Page-->
+   <footer class="footer">
+    <div class="footer-column">
+        <h3>MAY WE HELP YOU?</h3>
+        <a href="/About Us/about_us.html">Contact Us</a>
+        <a href="/Our Services/service.html">Our Services</a>
+        <a href="#">FAQs</a>
+    </div>
+    <div class="footer-column">
+        <h3>Available Brands</h3>
+        <a href="/Brands/dior men perfume/dior_men.html">Gucci Men</a>
+        <a href="/Brands/Gucci_women Perfume/gucci_women.html">Gucci women</a>
+        <a href="/Brands/Burberry men/burberrymen.html">Burberry Men </a>
+        <a href="/Brands/Burberry Women/buberry_women.html">Burberry Women </a>
+        <a href="/Brands/dior men perfume/dior_men.html">Dior Men </a>
+        <a href="/Brands/dior_women/dior_women.html">Dior Women </a>
+        <a href="/Brands/Chanel Men Perfume/chanel_men.html">Chanel Men </a>
+        <a href="/Brands/Chanel women/chanel_women.html">Chanel Women </a>
+        <a href="/Brands/CK Men/ck_men.html">CK Men </a>
+        <a href="/Brands/CK Women/ck_women.html">CK Women </a>
+    </div>
+    <div class="footer-column">
+        <h3>STORE LOCATOR</h3>
+        <input type="text" placeholder="Country/Region, City">
+    </div>
+    <div class="footer-column">
+        <h3>Sign Up for Paarees Perfume updates</h3>
+        <p>By entering your email address below, you consent to receiving our newsletter...</p>
+        <input type="email" placeholder="Email">
+        <p class="country">COUNTRY/REGION</p>
+        <p>Karachi, Pakistan </p>
+    </div>
+    <div class="footer-bottom">
+      <p>PAAREES PERFUMES</p>
+  </div>
+</footer>
+<script>
+    function toggleSidebar() {
+        document.getElementById('sidebar').classList.toggle('open');
+    }
+    
+    function downloadPriceList() {
+        let priceList = "Perfume Price List:\nDior - $120\nGucci - $110\nBurberry - $95\nChanel - $140\nCK - $85\nGuerlain - $130";
+        let blob = new Blob([priceList], { type: "text/plain"});
+        let link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "Perfume_Price_List.txt";
+        link.click();
+    }
+</script>
+</body>
+</html>
