@@ -70,18 +70,6 @@ body {
     color: #666;
     margin-bottom: 10px;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -20px;
-    margin-left: -10px;
-    width: 89pc;
-    padding: 15px 20px;
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 .left-menu, .right-menu {
     display: flex;
     align-items: center;
@@ -131,7 +119,99 @@ a:hover {
     cursor: pointer;
     transition: background 0.3s ease;
 }
-
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      margin-top: -20px;
+    margin-left: -10px;
+    width: 84pc;
+      background-color: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .left-menu{
+      display: flex;
+      gap: 16px;
+      margin-right: 50px;
+      
+      }
+      
+      .logo img{
+      width: 190px;
+      height: 80px;
+      }
+      
+      a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      }
+      
+      a:hover {
+      text-decoration: underline;
+      }
+      #addtocart{
+        margin-top: -80px;
+        font-size: 20px;
+        margin-left: 5px;
+      }
+      /* Dropdown menu */
+      .dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: white;
+          list-style: none;
+          padding: 0;
+          min-width: 150px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+      
+      .dropdown-menu li {
+          position: relative;
+      }
+      .dropdown{
+         list-style: none;
+      
+      }
+      /* Sub-dropdown */
+      .sub-dropdown a{
+         font-size: 16px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+      }
+      .sub-menu {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          background: white;
+          list-style: none;
+          padding: 0;
+          min-width: 150px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      
+      .sub-dropdown:hover .sub-menu {
+          display: block;
+      }
+      
+      /* Hover Effects */
+      .navbar a:hover,
+      .dropdown-menu a:hover,
+      .sub-menu a:hover {
+          background: #f0f0f0;
+      }
+      #drop{
+         font-size: 18px;
+      }
 .card button:hover {
     background: rgb(29, 28, 28);
     color: white;
@@ -153,7 +233,7 @@ a:hover {
             padding: 40px 20px;
             display: flex;
             margin-left: -20px;
-            width: 90pc;
+            width: 84pc;
             margin-bottom: -20px;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -259,14 +339,14 @@ a:hover {
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="logo.png" alt="">
+            <img src="/E-Project/Dashboard/logo.png" alt="">
         </div>
         <div class="left-menu">
-            <a href="/Dashboard/dashboard.html">HOME</a>
-            <a href="/Dashboard/women_cards.html">WOMEN</a>
-            <a  href="/Dashboard/men_cards.html">MEN</a>
-            <a href="/About Us/about_us.html">CONTACT US</a>
-            <a href="/Dashboard/pricelist.html">PRICE LIST</a>
+            <a href="/index.html">HOME</a>
+            <a href="/E-Project/Dashboard/women_cards.html">WOMEN</a>
+            <a  href="/E-Project/Dashboard/men_cards.html">MEN</a>
+            <a href="/E-Project/About Us/about_us.html">CONTACT US</a>
+            <a href="/E-Project/Dashboard/pricelist.html">PRICE LIST</a>
 
         </div>
         <div class="right-menu">
@@ -274,6 +354,7 @@ a:hover {
                 <input type="text" placeholder="Search..">
                 <i class="fas fa-search"></i>
             </div>
+           <a style="margin-top: 10px;" href="/E-Poject/Sign Up/index.html"> <i class="fas fa-user"></i></a>
         </div>
     </nav>
     <h1 class="title">Men Fragrance</h1>
@@ -476,5 +557,39 @@ a:hover {
               <p>PAAREES PERFUMES</p>
           </div>
         </footer>
+        <script>
+            //side navbar
+// Toggle the visibility of a dropdown menu
+const toggleDropdown = (dropdown, menu, isOpen) => {
+    dropdown.classList.toggle("open", isOpen);
+    menu.style.height = isOpen ? `${menu.scrollHeight}px` : 0;
+  };
+  // Close all open dropdowns
+  const closeAllDropdowns = () => {
+    document.querySelectorAll(".dropdown-container.open").forEach((openDropdown) => {
+      toggleDropdown(openDropdown, openDropdown.querySelector(".dropdown-menu"), false);
+    });
+  };
+  // Attach click event to all dropdown toggles
+  document.querySelectorAll(".dropdown-toggle").forEach((dropdownToggle) => {
+    dropdownToggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      const dropdown = dropdownToggle.closest(".dropdown-container");
+      const menu = dropdown.querySelector(".dropdown-menu");
+      const isOpen = dropdown.classList.contains("open");
+      closeAllDropdowns(); // Close all open dropdowns
+      toggleDropdown(dropdown, menu, !isOpen); // Toggle current dropdown visibility
+    });
+  });
+  // Attach click event to sidebar toggle buttons
+  document.querySelectorAll(".sidebar-toggler, .sidebar-menu-button").forEach((button) => {
+    button.addEventListener("click", () => {
+      closeAllDropdowns(); // Close all open dropdowns
+      document.querySelector(".sidebar").classList.toggle("collapsed"); // Toggle collapsed class on sidebar
+    });
+  });
+  // Collapse sidebar by default on small screens
+  if (window.innerWidth <= 1024) document.querySelector(".sidebar").classList.add("collapsed");
+        </script>
 </body>
 </html>

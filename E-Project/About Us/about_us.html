@@ -166,9 +166,169 @@
                 width: 100%;
             }
         }
+        .navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 84pc;
+padding: 15px 20px;
+background-color: white;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-menu, .right-menu {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.logo img{
+width: 250px;
+height: 90px;
+}
+
+a {
+text-decoration: none;
+color: black;
+font-size: 14px;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.search-container {
+display: flex;
+align-items: center;
+border-bottom: 1px solid black;
+}
+
+.search-container input {
+border: none;
+outline: none;
+padding: 5px;
+}
+
+.search-container i {
+padding: 5px;
+}
+
+.fas {
+font-size: 18px;
+cursor: pointer;
+}
+.fragrance{
+font-weight: 100;
+margin-left: 60px;
+}
+
+.footer {
+            background-color: #000;
+            color: white;
+            margin-top: 20px;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            width: 22%;
+            min-width: 200px;
+        }
+        .footer-column h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .footer-column a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+        .footer input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+          .card .card-text {
+                font-size: 7px;
+                padding: 10px 20px;
+            }
+        }
+        @media (max-width: 768px) {
+          .card .card-title {
+                font-size: 10px;
+                padding: 10px 20px;
+            }
+        }
+        @media (max-width: 768px) {
+          .card .card-img {
+            width: 70pc;
+            }
+        }
+        .country {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .icons i{
+          margin: 6px;
+        }
+        .footer-bottom {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+        .footer-bottom p{
+          color: #fff;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 45px;
+          margin-left: -50px;
+        }
+        @media (max-width: 768px) {
+          .container .navbar-brand {
+                font-size: 30px;
+                margin-left: 40px;
+            }
+        }
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+          .main  .card-img, .video video {
+                width: 280px; /* Full width on small screens */
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/E-Project/Dashboard/logo.png" alt="">
+        </div>
+        <div class="left-menu">
+            <a href="/index.html">HOME</a>
+            <a href="/E-Project/Dashboard/women_cards.html">WOMEN</a>
+            <a  href="/E-Project/Dashboard/men_cards.html">MEN</a>
+            <a href="/E-Project/About Us/about_us.html">CONTACT US</a>
+            <a href="/E-Project/Dashboard/pricelist.html">PRICE LIST</a>
+
+        </div>
+        <div class="right-menu">
+            <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <i class="fas fa-search"></i>
+            </div>
+           <a style="margin-top: 10px;" href="/E-Poject/Sign Up/index.html"> <i class="fas fa-user"></i></a>
+        </div>
+    </nav>
     <div class="services-container">
         <h1>Our Services & Other Information</h1>
         <p>We provide the best-in-class services for our customers.</p>
@@ -204,6 +364,7 @@
             <p class="success-message" id="successMessage">Thank you! Your message has been sent.</p> <br>
           </div>
           </div>
+          
           <script>
             function sendMessage() {
                 let firstName = document.getElementById("firstName").value;
@@ -227,5 +388,41 @@
     <div class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.6254012511886!2d67.06005937443027!3d24.87664054461175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33eecaef72355%3A0x3c9cca44c77de888!2sDolmen%20Mall%20Tariq%20Road!5e0!3m2!1sen!2s!4v1742153654067!5m2!1sen!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+     <!--Footer Page-->
+   <footer class="footer">
+    <div class="footer-column">
+        <h3>MAY WE HELP YOU?</h3>
+        <a href="/About Us/about_us.html">Contact Us</a>
+        <a href="/Our Services/service.html">Our Services</a>
+        <a href="#">FAQs</a>
+    </div>
+    <div class="footer-column">
+        <h3>Available Brands</h3>
+        <a href="/Brands/dior men perfume/dior_men.html">Gucci Men</a>
+        <a href="/Brands/Gucci_women Perfume/gucci_women.html">Gucci women</a>
+        <a href="/Brands/Burberry men/burberrymen.html">Burberry Men </a>
+        <a href="/Brands/Burberry Women/buberry_women.html">Burberry Women </a>
+        <a href="/Brands/dior men perfume/dior_men.html">Dior Men </a>
+        <a href="/Brands/dior_women/dior_women.html">Dior Women </a>
+        <a href="/Brands/Chanel Men Perfume/chanel_men.html">Chanel Men </a>
+        <a href="/Brands/Chanel women/chanel_women.html">Chanel Women </a>
+        <a href="/Brands/CK Men/ck_men.html">CK Men </a>
+        <a href="/Brands/CK Women/ck_women.html">CK Women </a>
+    </div>
+    <div class="footer-column">
+        <h3>STORE LOCATOR</h3>
+        <input type="text" placeholder="Country/Region, City">
+    </div>
+    <div class="footer-column">
+        <h3>Sign Up for Paarees Perfume updates</h3>
+        <p>By entering your email address below, you consent to receiving our newsletter...</p>
+        <input type="email" placeholder="Email">
+        <p class="country">COUNTRY/REGION</p>
+        <p>Karachi, Pakistan </p>
+    </div>
+    <div class="footer-bottom">
+      <p>PAAREES PERFUMES</p>
+  </div>
+</footer>
 </body>
 </html>

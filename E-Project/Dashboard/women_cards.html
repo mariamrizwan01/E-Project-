@@ -71,60 +71,102 @@ body {
     margin-bottom: 10px;
 }
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: -10px;
-    margin-top: -20px;
-    width: 89pc;
-    padding: 15px 20px;
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.left-menu, .right-menu {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.logo {
-    font-size: 34px;
-    margin-top: -10px;
-    margin-left: 50px;
-    font-weight: bold;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-}
-
-.search-container input {
-    border: none;
-    outline: none;
-    padding: 5px;
-}
-
-.search-container i {
-    padding: 5px;
-}
-
-.fas {
-    font-size: 18px;
-    cursor: pointer;
-}
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 84pc;
+      align-items: center;
+      padding: 15px 20px;
+      margin-top: -20px;
+      margin-left: -10px;
+      background-color: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px 20px;
+      background-color: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .left-menu{
+      display: flex;
+      gap: 16px;
+      margin-right: 50px;
+      
+      }
+      
+      .logo img{
+      width: 190px;
+      height: 80px;
+      }
+      
+      a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      }
+      
+      a:hover {
+      text-decoration: underline;
+      }
+      #addtocart{
+        margin-top: -80px;
+        font-size: 20px;
+        margin-left: 5px;
+      }
+      /* Dropdown menu */
+      .dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: white;
+          list-style: none;
+          padding: 0;
+          min-width: 150px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+      
+      .dropdown-menu li {
+          position: relative;
+      }
+      .dropdown{
+         list-style: none;
+      
+      }
+      /* Sub-dropdown */
+      .sub-dropdown a{
+         font-size: 16px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+      }
+      .sub-menu {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          background: white;
+          list-style: none;
+          padding: 0;
+          min-width: 150px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      
+      .sub-dropdown:hover .sub-menu {
+          display: block;
+      }
+      
+      /* Hover Effects */
+      .navbar a:hover,
+      .dropdown-menu a:hover,
+      .sub-menu a:hover {
+          background: #f0f0f0;
+      }
+      #drop{
+         font-size: 18px;
+      }
 .fragrance{
     font-weight: 100;
     margin-left: 20px;
@@ -157,9 +199,9 @@ a:hover {
 .footer {
             background-color: #000;
             color: white;
+            width: 84pc;
             margin-top: 20px;
             margin-left: -20px;
-            width: 90pc;
             margin-bottom: -20px;
             padding: 40px 10px;
             display: flex;
@@ -267,14 +309,14 @@ a:hover {
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="logo.png" alt="">
+            <img src="/E-Project/Dashboard/logo.png" alt="">
         </div>
         <div class="left-menu">
-            <a href="/Dashboard/dashboard.html">HOME</a>
-            <a href="/Dashboard/women_cards.html">WOMEN</a>
-            <a  href="/Dashboard/men_cards.html">MEN</a>
-            <a href="/About Us/about_us.html">CONTACT US</a>
-            <a href="/Dashboard/pricelist.html">PRICE LIST</a>
+            <a href="/index.html">HOME</a>
+            <a href="/E-Project/Dashboard/women_cards.html">WOMEN</a>
+            <a  href="/E-Project/Dashboard/men_cards.html">MEN</a>
+            <a href="/E-Project/About Us/about_us.html">CONTACT US</a>
+            <a href="/E-Project/Dashboard/pricelist.html">PRICE LIST</a>
 
         </div>
         <div class="right-menu">
@@ -282,6 +324,7 @@ a:hover {
                 <input type="text" placeholder="Search..">
                 <i class="fas fa-search"></i>
             </div>
+           <a style="margin-top: 10px;" href="/E-Poject/Sign Up/index.html"> <i class="fas fa-user"></i></a>
         </div>
     </nav>
     <h1 class="title">Women Fragrance</h1>
